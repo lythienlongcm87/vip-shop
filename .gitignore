@@ -2,4 +2,8 @@
 .buildpath
 .project
 .settings*
-
+DEV.LOG
+configuration.php
+/ext_tmp
+/tmp
+/cache

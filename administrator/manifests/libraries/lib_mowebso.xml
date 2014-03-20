@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="library" client="site" version="2.5" method="upgrade">
+    <name>MoWebSo Framework</name>
+    <libraryname>mowebso</libraryname>
+    <copyright>(C) 2009 - 2013 ENYtheme e.K.</copyright>
+    <license>GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <author>MoWebSo.com / Eugen Stranz</author>
+    <authorEmail>info@mowebso.com</authorEmail>
+    <authorUrl>http://www.mowebso.com</authorUrl>
+    <creationDate>April 2012</creationDate>
+    <version>1.1.0</version>
+    <description>The MoWebSo Framework Is The Foundation For All MoWebSo Extensions</description>
+	<files folder=".">
+        <file>mowebso.php</file>
+        <file>index.html</file>
+        <folder>core</folder>
+        <folder>joomla</folder>
+    </files>
+</install>

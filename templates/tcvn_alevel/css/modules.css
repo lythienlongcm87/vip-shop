@@ -1,0 +1,1572 @@
+@charset "utf-8";
+/*=========================================================================
+# Joomla 2.5 Template - Alevel Shop
+# =========================================================================
+# Author    TheCoders.vn
+# Copyright Copyright (C) 2013 Thecoders.vn. All Rights Reserved.
+# License - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://thecoders.vn
+# Live Demo: http://gatheme.com
+# Technical Support:  Forum - http://laptrinhvien-vn.com
+  =======================================================================*/
+/* `XHTML, HTML4, HTML5 Reset
+/*=============================CSS Document==============================*/
+#tcvn-user-1 .social{
+    overflow: hidden;
+}
+#tcvn-user-1 .social a {
+	width: 47px;
+	height: 47px;
+	margin-left: 30px;
+	display: inline-block;
+	background-position: 0 -52px;
+	background-repeat: no-repeat;
+	outline: none;
+	-webkit-transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+	-moz-transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+	-o-transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+	-ms-transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+	transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+	float: left;
+}
+#tcvn-user-1 .social a:hover,
+#tcvn-user-1 .social a.active{
+	background-position: 0 0;
+}
+#tcvn-user-1 .social a span {
+	display: none;
+}
+#tcvn-user-2 .total_products span,
+#tcvn-user-2 form.tcvn-currency select#virtuemart_currency_id,
+#tcvn-user-2 form.tcvn-currency span.select {
+	font-weight: bold;
+	font-size: 12px !important;
+}
+#tcvn-user-2 .moduletable {
+	text-align: right;
+}
+#tcvn-user-2 {
+	padding: 15px 0;
+	line-height: 25px;
+}
+#tcvn-user-2 ul.menu{
+    text-align: right;
+    margin-bottom: 10px;
+}
+#tcvn-user-2 ul.menu li{
+    display: inline-block;
+}
+#tcvn-user-2 ul.menu li a{
+    padding: 0 10px;
+    line-height: 12px;
+    color: #797979;
+}
+#tcvn-user-2 ul.menu li:last-child a{
+    padding-right: 0;
+    border: none;
+}
+#tcvn-user-2 ul.menu li a:hover{
+    background: none;
+    text-decoration: underline;
+}
+#tcvn-user-2, #tcvn-user-2 .show_cart a {
+	color: #797979;
+}
+#tcvn-user-2 .show_cart span.shopping_cart, #tcvn-user-2 .show_cart a {
+	padding-left: 20px;
+}
+#tcvn-user-2 form.tcvn-currency {
+	position: relative;
+}
+#tcvn-user-2 form.tcvn-currency, #tcvn-user-2 form.tcvn-currency select#virtuemart_currency_id {
+	margin: 0;
+}
+#tcvn-user-2 form.tcvn-currency select#virtuemart_currency_id {
+	height: 24px;
+	outline: medium none;
+	width: 70px;
+	cursor: pointer;
+	position: relative;
+}
+#tcvn-user-2 form.tcvn-currency span.select {
+	height: 24px;
+	outline: medium none;
+	padding: 0 25px 0 5px;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 0;
+	width: 37px;
+	z-index: 0;
+	overflow: hidden;
+}
+#tcvn-user-2 form.tcvn-currency span.select {
+	background: url("../images/bg_Curency.png") no-repeat;
+}
+/*==slideshow==*/
+#tcvn-slideshow-fluid,
+#tcvn-slideshow{
+	box-shadow: 0 5px 5px #000000;
+	margin-bottom: 20px;
+}
+#tcvn-slideshow-fluid .rev_slider_wrapper {
+	background: transparent !important;
+	padding: 0 !important;
+}
+#tcvn-slideshow-fluid {
+    padding:0;
+    overflow: hidden;
+}
+.img-circle.bg-color{
+    width: 120px;
+    color: #ffffff;
+    line-height: 120px;
+    text-align: center;
+}
+a.learn-more{
+    padding: 15px 50px;
+	color: #ffffff !important;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 2x;
+}
+a.learn-more:hover{
+	background-color: #d9d8d8;
+}
+#tcvn-slideshow-fluid .tp-leftarrow.default{
+    background-image: url('../images/slide-arrow-l.png');
+}
+#tcvn-slideshow-fluid .tp-rightarrow.default{
+	background-image: url('../images/slide-arrow-r.png');
+}
+#tcvn-slideshow-fluid .tp-leftarrow.default,
+#tcvn-slideshow-fluid .tp-rightarrow.default{
+	background-color: #d9d8d8;
+	width: 45px;
+	height: 47px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+}
+#tcvn-slideshow-fluid .caption_text2{
+	/*font-family: 'Helvetica Neue';*/
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Helvetica, sans-serif;
+	font-weight: normal;
+}
+/*== content ==*/
+#tcvn-content .vmproduc {
+	margin: 0 !important;
+}
+.vmproduct .tabouter {
+	margin-top: 20px
+}
+div.spacer {
+	padding: 5px 5px 10px;
+	text-align: center;
+	/*background:  url("../images/bg-product.png") repeat-x 0 0 #FFFFFF;
+	*/
+	background: #FFFFFF;
+	border: 2px solid #F0F0F0;
+	border-radius: 5px 5px 5px 5px;
+	overflow: hidden;
+}
+.spacer:hover {
+	-webkit-box-shadow: 0 0 15px #bdbdbd;
+	box-shadow: 0 0 15px #bdbdbd;
+	-webkit-transition: all 0.4s linear 0s;
+	-moz-transition: all 0.4s linear 0s;
+	-o-transition: all 0.4s linear 0s;
+	-ms-transition: all 0.4s linear 0s;
+	transition: all 0.4s linear 0s;
+}
+.spacer .vmproduct-name {
+	color: #3A3B3B;
+	/*font-family: 'nexa_boldregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+}
+.addtocart-area a.product-details  {
+	color:#FFFFFF !important;
+	padding: 5px 5px 4px !important;
+	text-transform: none;
+	display: inline-block;
+}
+.product-price .PricetaxAmount .PricetaxAmount{
+	font-size: 18px;
+	line-height: 31px;
+	display: inline-block;
+}
+.spacer > a > img {
+	width: 100%;
+	padding: 10px 0 20px;
+	background: url("../images/bg-product-img.png") repeat-x center bottom;
+	margin-bottom: 15px;
+    max-width: 300px;
+}
+.vmproduct .quantity-box,
+.vmproduct  .quantity-controls {
+	display: none;
+}
+.spacer  .product-price,
+.spacer  .addtocart-area{
+	display: inline-block;
+}
+.spacer  .product-price{
+	margin-right: 5px;
+}
+.spacer  .addtocart-area{
+	margin-left: 5px;
+}
+.spacer form.product,
+.spacer .product-price{
+	margin-bottom: 0;
+}
+.spacer .product-price .PricesalesPrice, 
+.spacer .PricesalesPrice .PricesalesPrice ,
+.spacer .product-price .PricetaxAmount{
+	font-size: 14px;
+	/*font-family: 'nexa_boldregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+	line-height: 35px;
+    display: block;
+    white-space: nowrap;
+}
+.spacer .PricesalesPrice span.PricesalesPrice span{
+    font-size: 13px;
+}
+.browse-view .horizontal-separator{
+	margin: 20px 0;
+}
+.spacer  span.addtocart-button {
+	float: none;
+	margin: 0 ;
+	width: 100px !important;
+}
+span.addtocart-button input.addtocart-button,
+span.addtocart-button input.notify-button {
+	border: none !important;
+	border-radius: 4px 4px 4px 4px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 12px;
+	height: 30px !important;
+	letter-spacing: 0px;
+	padding: 4px 5px 4px 25px !important;
+	text-align: center;
+	width: 96px !important;
+	-webkit-transition: all 0.4s linear 0s;
+	-moz-transition: all 0.4s linear 0s;
+	-o-transition: all 0.4s linear 0s;
+	-ms-transition: all 0.4s linear 0s;
+	transition: all 0.4s linear 0s;
+}
+/*==promotion==*/
+#tcvn-promotion .main {
+	background: url("../images/bg_promotion.png");
+	background-image: 100%;
+	box-shadow: 0 0 2px #C1C1C1 inset;
+}
+#tcvn-promotion .tcvn-module-inner{
+	padding: 3px;
+}
+#tcvn-promotion .promotion {
+	line-height: 28px;
+	padding: 28px 0;
+	text-align: center;
+	font-size: 18px;
+	/*font-family: 'nexa_lightregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	color: #616161;
+	background-size: 100%;
+}
+#tcvn-promotion .promotion a {
+	font-size: 24px;
+}
+
+/*==position==*/
+#tcvn-position-4 .main{
+    background: #FFFFFF;
+    border-radius: 4px 4px 0 0;
+}
+#tcvn-position-4 .the-new-imac {
+	overflow: hidden;
+	padding: 30px 0 15px;
+	text-align: center;
+}
+.the-new-imac a{
+    position: relative;
+    text-decoration: none;
+}
+.the-new-imac a span.advertise-circle{
+    position: absolute;
+    top: -40px;
+    border-radius: 500px;
+    color: #FFFFFF;
+    font-size: 30px;
+    height: 90px;
+    right: 18px;
+    text-align: center;
+    width: 90px;
+    line-height: 90px;
+    /*font-family: 'nexa_boldregular';*/
+    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+}
+.the-new-imac a img{
+	border-radius: 500px;
+	width: 100%;
+      
+}
+.the-new-imac .img-circle{
+	
+    -webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	overflow: hidden !important;
+	border: 5px solid #eeedec;
+	max-width: 350px;
+	margin: 0 auto;
+}
+.the-new-imac a span.title{
+    position: absolute;
+    top: -70px;
+    color: #FFFFFF;
+    font-size: 18px;
+    right: 40px;
+    text-align: right;
+    /*font-family: 'nexa_boldregular';*/
+    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+    text-decoration: none;
+    border: none !important;
+    z-index: 100;
+}
+.the-new-imac .advertise-circle-shadow {
+    background: url("../images/image-shadow.png") no-repeat center top;
+    height: 50px;
+    position: relative;
+    margin-top: -20px;
+}
+#tcvn-position-4 .the-new-imac .img-circle:hover {
+	transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+}
+#tcvn-position-56 .bg-center {
+    background: url("../images/bg-centrer56.png") no-repeat center center;
+    overflow: hidden;
+}
+#tcvn-position-56 .main-inner {
+    background: url("../images/bg-footer-position56.png") no-repeat center bottom ;
+    padding: 0 0 20px;
+}
+#tcvn-position-56 .main {
+	background: url("../images/bg-position56.png") no-repeat #FEFEFE;
+	background-size: 100%;
+}
+#tcvn-position-5 .tcvn-module-inner {
+	padding-right: 27px;
+	margin-bottom: 10px;
+}
+#tcvn-position-5 .payment h1 {
+	/*font-family: 'nexa_lightregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	margin: 7px 0 3px 0;
+}
+#tcvn-position-5 .payment h1 span {
+	/*font-family: 'nexa_boldregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+}
+#tcvn-position-5 .payment a{
+    display: block;
+    text-align: center;
+}
+#tcvn-position-5 .payment img {
+	width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+#tcvn-position-6 .customfree-delivery {
+	padding: 0 0 10px 10px;
+}
+#tcvn-position-6 .intro-img {
+	float: right;
+	margin: 10px 0 0;
+}
+#tcvn-position-6 .intro-text h2 {
+	color: #ff9900;
+	/*font-family: 'nexa_lightregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	white-space: nowrap;
+	margin: 0;
+    font-size: 30px;
+}
+#tcvn-position-6 .intro-text{
+    padding: 10px 0 0;
+}
+#tcvn-position-6 .read-mode{
+    padding: 0 0 10px;
+}
+#tcvn-position-6 .intro-text p {
+	margin-bottom: 4px;
+}
+#tcvn-position-6 .intro-text h2 span {
+	/*font-family: 'nexa_boldregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#tcvn-position-7 .tcvn-module-inner{
+    border: 2px solid #E6E6E6;
+    border-radius: 5px 5px 5px 5px;
+}
+#tcvn-position-7 ul.vmmanufacturer{
+	overflow:hidden;
+	max-height: 120px;
+}
+#tcvn-position-7 ul.vmmanufacturer li{
+	display:inline-block;
+	
+}
+.read-mode a {
+	color: #f59b1d;
+	/*font-family: 'nexa_boldregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+}
+#tcvn-position-810 {
+    margin-top: 20px;
+}
+#tcvn-position-810 .main{
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px #000000;
+    position: relative;
+    overflow: inherit;
+    color: #8f8f8f;
+}
+#tcvn-position-810 h2{
+    /*font-family: 'nexa_lightregular';*/
+    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+}
+#tcvn-position-810 ul{
+    margin: 0;
+}
+#tcvn-position-8 .stepstobuy{
+    width: 274px;
+    height: 172px;
+	background-size:auto;
+}
+#tcvn-position-9 ul.latestnews li{
+    background: url("../images/bg-li-lastest.png") repeat-x center bottom;
+    padding: 5px 0;
+    border: none;
+}
+#tcvn-position-9 ul.latestnews li:last-child{
+    background: none transparent;
+}
+#tcvn-position-9 ul.latestnews li a{
+    padding-left: 17px;
+}
+#tcvn-position-9 ul.latestnews li div.latestnewstitle{
+    font-weight: bold;
+    padding-left: 17px;
+}
+#tcvn-position-10 p{
+    margin: 0;
+    color: #8f8f8f;
+}
+#tcvn-position-10 p img{
+    margin-top: 10px;
+}
+#tcvn-position-10 p span{
+    font-weight: bold;
+}
+/* module in compoment */
+.moduletable-xstyle .title {
+	margin: 0 auto;
+	text-align: center;
+}
+.moduletable-xstyle .title h3 {
+	color: #ffffff;
+	/*font-family: 'nexa_lightregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-size: 21px !important;
+    text-shadow: 0 1px 1px #FFFFFF;
+    font-weight: bold;
+}
+.moduletable-xstyle ul.vmproduct {
+	margin: 0;
+}
+#tcvn-footer {
+	padding-top: 20px;
+}
+#tcvn-footer ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#tcvn-footer li {
+    display: inline-block;
+}
+#tcvn-footer li a {
+    color: #fcfcfc;
+    display: block;
+    font-size: 14px;
+    /*font-family: 'nexa_lightregular';*/
+    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+    padding: 0 20px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#tcvn-footer li a:hover {
+    background: none;
+}
+.coppyright{
+    color: #fcfcfc;
+    text-align: center;
+    padding-bottom: 5px;
+}
+/* Default Section Part */
+#tcvn-position-7 a,
+#tcvn-position-7 .vmheader{
+    /*font-family: 'nexa_lightregular';*/
+    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+}
+#tcvn-position-7 .vmheader{
+    padding:16px 0 16px 55px ;
+    font-size: 14px;
+}
+#tcvn-position-7 .manufacturer-name{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#tcvn-position-7 .manufacturer-link-products{
+    padding: 10px 0;
+    display: block;
+    color: #898989;
+}
+
+/* right  */
+#tcvn-right .right-wrapper{
+    border: 1px solid #e3e1e1;
+    background: #FFFFFF;
+    margin-bottom: 15px;
+    padding: 0 13px;
+}
+.mod-right{
+	padding: 0 !important;
+}
+#tcvn-right .right-wrapper .title{
+    margin: 0 13px;
+}
+#tcvn-right .right-wrapper .title h1{
+    color: #14191e;
+    /*font-family: 'nexa_lightregular';*/
+    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+    margin: 6px 0 6px !important;
+}
+#tcvn-right .search h3{
+    margin: 0 !important;
+}
+#tcvn-right .right-wrapper.search .search input#mod_virtuemart_search{
+    max-width: 175px;
+    width: 100%;
+    margin: 5px 0;
+}
+#tcvn-right .right-wrapper.home-search{
+	border: 0;
+	background: transparent;
+	background-color: transparent;
+	margin: 0 !important;
+	padding: 0!important;
+}
+#tcvn-right .right-wrapper.home-search form{
+	margin: 0;
+	padding: 5px 0 !important
+}
+#tcvn-right .right-wrapper.home-search .search input#mod_virtuemart_search{
+	margin: 0 8px 0 0;
+    max-width: 146px;
+}
+#tcvn-right .right-wrapper.home-search .search button.buttonhome-search{
+	padding: 4px 15px 5px !important;
+}
+#tcvn-right .right-wrapper.home-search .search input#mod_virtuemart_search,
+#tcvn-right .right-wrapper.home-search .search button.buttonhome-search{
+	display:inline-block;
+}
+
+#custom_parent_id{
+    height: 27px;
+    margin-top: 10px;
+}
+#tcvn-content .virtuemart_search input.inputbox{
+    margin-top: 10px;
+}
+#tcvn-content .virtuemart_search input.button{
+    padding: 2px 10px;
+}
+#mod-right ul.menu li img{
+    width: 15px;
+    margin-right: 5px;
+}
+#tcvn-right .right-wrapper.shopping-right h3,
+#tcvn-right .right-wrapper.who-online h3{
+	padding-left: 20px;
+	/*font-family: 'nexa_lightregular' !important;*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: normal !important;
+	margin: 5px 0 0 !important;
+}
+#tcvn-right .vmCartModule.shopping-right{
+	padding-bottom: 15px;
+}
+#tcvn-right .right-wrapper.shopping-right .totalproduct{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #E3E1E1;
+	margin-bottom: 13px;
+}
+#tcvn-right .right-wrapper.shopping-right .total{
+	float: left;
+	line-height: 30px;
+} 
+#tcvn-right .right-wrapper.shopping-right .show_cart{
+	float: right;
+}
+#tcvn-right .yright-wrapper .yright-title span{
+    font-weight: bold;
+}
+#tcvn-right .yright-wrapper .yright-title h3{
+    text-align: center;
+    margin: 0 !important;
+}
+#tcvn-right .yright-wrapper .yright-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E3E1E1;
+    margin-bottom: 15px;
+}
+#tcvn-right .yright-wrapper .yright-content{
+    padding: 10px;
+}
+#tcvn-right .yright-wrapper.best-sales .yright-content{
+	padding: 0 !important;
+}
+.yright-wrapper.best-sales .vmproduct .spacer{
+	border: none;
+}
+.yright-wrapper.best-sales .vmproduct .spacer:hover{
+	box-shadow: none;
+}
+.yright-wrapper.best-sales .bg-best-sales{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	width: 79px;
+	height: 81px;
+}
+#login-form .userdata{
+    padding: 0 !important;
+    text-align: center;
+}
+#tcvn-right ul.vmproduct{
+	margin: 0 !important;
+}
+#tcvn-right ul.vmproduct.best-sales li{
+    border-top: 1px solid #E3E1E1;
+}
+#tcvn-right div.vmgroup.best-sales ul:first-child li{
+    border-top: none;
+}
+#tcvn-right ul.vmproduct.best-sales li img:hover{
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-name: vinabounce;
+    animation-timing-function: linear;
+}
+#login-form #modlgn-username,
+#login-form #modlgn-passwd{
+    max-width: 180px;
+}
+#login-form #form-login-username label,
+#login-form #form-login-password label{
+    display: none;
+}
+#login-form p{
+    margin: 0px;
+}
+#login-form p#form-login-username{
+    margin-bottom: 0;
+}
+#login-form #modlgn-remember{
+    float: left;
+    margin-right: 5px;
+}
+#login-form #form-login-remember label{
+    float: left;
+    text-align: left;
+}
+#login-form #form-login-remember {
+    overflow: hidden;
+}
+#login-form input.button{
+    margin: 0 0 10px !important;
+    clear: both;
+}
+#login-form,
+#login-form ul,
+#login-form .userdata{
+    margin: 0 !important;
+}
+.zright-wrapper{
+    background: url("../images/bg-zright.png") repeat-x center top;
+    margin-bottom: 15px;
+}
+.zright-wrapper .content{
+    background: url("../images/bg-zright.png") repeat-x center bottom;
+    padding: 7px 0;
+    overflow: hidden;
+}
+.zright-wrapper .content .acymailing_module{
+    overflow: hidden;
+    background: url("../images/bg-email-newsletter.png");
+    padding: 0 10px !important;
+}
+.zright-wrapper .content h3{
+    font-weight: normal;
+    color: #6E6E6E;
+    margin: 10px 0 0 !important;
+    line-height: 20px;
+}
+.zright-wrapper .content .promotion-and-new{
+    font-weight: bold;
+}
+.zright-wrapper .content table.acymailing_form{
+    float: left;
+    width: 99.9%;
+    margin-bottom: 10px !important;
+}
+.zright-wrapper .content table.acymailing_form input[type*=text],
+#email-newsletter input[type*=text]{
+    width: 97.9% !important;
+}
+.zright-wrapper .content table.acymailing_form td.acysubbuttons,
+#email-newsletter .divbuttom{
+    text-align: center !important;
+}
+#email-newsletter{
+    padding-bottom: 15px !important;
+}
+#email-newsletter .promotion-and-new{
+    margin-bottom: 10px !important;
+}
+.slider-product .slider-product.vmgroup{
+    position: relative;
+    padding: 15px 0 0;
+}
+.moduletable-xstyle.slider-product .prev-item,
+.moduletable-xstyle.slider-product .next-item{
+    height: 42px !important;
+    top: -57px !important;
+    width: 42px !important;
+    box-shadow: -1px 1px 2px #6B6B6B;
+    position: absolute;
+	text-indent: -1000px;
+}
+#tcvn-content .moduletable-xstyle.slider-product .prev-item{
+    right: 0;
+}
+#tcvn-content .moduletable-xstyle.slider-product .prev-item span{
+    background: url("../images/arrow-prev.png") no-repeat center center;
+}
+#tcvn-content .moduletable-xstyle.slider-product .next-item{
+    left: 0;
+}
+#tcvn-content .moduletable-xstyle.slider-product .next-item span{
+    background: url("../images/arrow-next.png") no-repeat center center;
+}
+#tcvn-content .moduletable-xstyle.slider-product .next-item span,
+#tcvn-content .moduletable-xstyle.slider-product .prev-item span{
+    display: block;
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+}
+#tcvn-content .modal {
+	background-color: transparent;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    margin-left: auto;
+    outline: medium none;
+    position: absolute;
+    top: auto;
+	left: auto;
+    width: auto;
+    z-index: 1050;
+	box-shadow: none; 
+}
+#tcvn-content .manufacturer .modal{
+	position: relative;
+	right: 0;
+}
+#tcvn-content span.addtocart-button input.addtocart-button,#tcvn-content span.addtocart-button input.notify-button{
+	width: 100px;
+	border: 0;
+	padding: 4px 4px 5px 25px;
+	font-size: 12px;
+	height: 30px;
+	letter-spacing: 0;
+}
+span.addtocart-button{
+	margin: 0;
+    display: inline-block;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+span.addtocart-button:hover{
+    box-shadow: 0 0 3px #6B6B6B;
+}
+span.addtocart-button input.addtocart-button{
+    background: url("../images/Cart.png") no-repeat 3px 4px !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+#tcvn-content  span.quantity-controls
+{
+	margin-top: 3px;
+	margin-left: 16px;
+}
+.moduletable-xstyle .tcvn-scroller-virtuemart .toolbar .left {
+    left: 0 !important;
+    margin-left: 0;
+}
+.moduletable-xstyle .tcvn-scroller-virtuemart .toolbar .right {;
+    right: 0;
+    margin-right: 0;
+}
+.moduletable-xstyle .tcvn-scroller-virtuemart .toolbar .left span,
+.moduletable-xstyle .tcvn-scroller-virtuemart .toolbar .right span{
+    background-image: url("../images/arrow-left-right.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 42px;
+    width: 42px;
+}
+.moduletable-xstyle .tcvn-scroller-virtuemart .toolbar .right span {
+    background-position: -42px 0;
+}
+.moduletable-xstyle .tcvn-scroller-virtuemart,
+.moduletable-xstyle .tcvn-scroller-virtuemart .slider_holder{
+    max-width: 800px !important;
+    width: 100% !important;
+}
+.moduletable-xstyle .tcvn-scroller-virtuemart .main-container{
+    max-width: 800px;
+    width: 92% !important;
+    padding: 4% !important;
+}
+
+/*== Category ==*/
+#tcvn-content h2.title{
+    /*font-family: 'nexa_boldregular';*/
+    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+    margin-top: 0;
+    border-bottom: 1px solid #cccccc ;
+}
+#tcvn-content .detail{
+	background: url(../images/category-detail.png);
+	border: 1px solid #E3E1E1;
+    padding: 10px 15px 30px;
+	margin: 0 0 20px 2px;
+	border-radius: 4px;
+}
+#tcvn-content .vote{
+    line-height: 24px;
+    display: inline-block;
+    font-weight: bold;
+}
+#tcvn-content .productdetails-view{
+    position: relative;
+}
+
+#tcvn-content .productdetails-view .back-to-category {
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+#tcvn-content .product_content .ratingbox{
+    float: right;
+    margin-left: 5px;
+}
+#tcvn-content .product_content .addtocart-area{
+    float: none;
+    margin-top: 10px;
+}
+#tcvn-content .product_content .products-buy{
+    float: left;
+    line-height: 30px;
+    padding: 5px 20px 0 0;
+}
+#tcvn-content .product_content .product-salesPrice{
+    line-height: 50px;
+}
+#tcvn-content .product_content form.product {
+    margin-bottom: 5px;
+}
+#tcvn-content .product_content .PricesalesPrice{
+    font-size: 36px;
+    /*font-family: 'nexa_lightregular';*/
+    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+    line-height: 50px;
+}
+#tcvn-content .productdetails-view .addtocart-bar{
+    padding: 0 !important;
+}
+#tcvn-content .orderby-displaynumber{
+	margin-top: 0;
+}
+#tcvn-content .detail h2 ,#tcvn-content .detail h3 {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+#tcvn-content .detail .productcount, #tcvn-content .detail .category-view {
+	text-align: center;
+}
+#tcvn-content .detail .category-view{
+	margin-bottom: 8px;
+}
+#tcvn-content .detail .category-view h2{
+	width: 126px;
+	height: 126px;
+	border-radius: 63px;
+	background: #C1C1C1; 
+	margin: 0 auto;
+	text-align: center;
+}
+#tcvn-content .detail .category-view h2 a{
+	color: white;
+	font-size: 14px;
+    display: block;
+    padding: 20px 0;
+    position: relative;
+}
+#tcvn-content .detail .category-view h2 img{
+    margin: 0 auto;
+    max-width: 30px;
+}
+#tcvn-content .detail .category-view h4{
+	margin-top: 36px;
+	color: #838383;
+}
+#tcvn-content .detail .category-view .spacer:hover >h4{
+	color: #26A8E0; 
+}
+#tcvn-content .browse-view .display-number select{
+	width: 94px;
+    outline: none;
+}
+#tcvn-content .orderby-displaynumber{
+    margin-bottom: 20px;
+}
+#tcvn-breadcrumbs .breadcrumbs{
+	font-size: 18px;
+	margin-top: 31px;
+	margin-bottom: 31px;
+	/*font-family: 'nexa_lightregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+}
+/*== Detail product ==*/
+#tcvn-content .compoment .span7 h2{
+	color: #1CA4DC;
+	/*font-family:  'nexa_boldregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+	padding-left: 12px;
+	border-bottom: 1px solid #E0E0E0;
+	margin-bottom: 10px;
+}
+#tcvn-content .compoment .spacer-buy-area h2.title{
+	padding: 0;
+}
+#tcvn-content .compoment{
+	margin-top: 0 !important;	
+}
+.productdetails-view.productdetails .spacer-buy-area{
+    position: relative;
+}
+#tcvn-content .compoment .span7 .spacer-buy-area,
+#tcvn-content .compoment .span7 .spacer-buy-area .addtocart-area,
+#tcvn-content .compoment .span7 .spacer-buy-area .product-price{
+	float: left;
+}
+#tcvn-content .compoment .span7 .spacer-buy-area .addtocart-area {
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100%;
+}
+#tcvn-content .compoment .span7 .spacer-buy-area .addtocart-area .title-buy{
+	float: left;
+	margin-top: 10px;
+}
+#tcvn-content .compoment .productdetails-view .addtocart-bar span.quantity-box, #tcvn-content .compoment .productdetails-view .addtocart-bar span.quantity-box input[type="text"]{
+	width: 75px;
+}
+#tcvn-content .compoment .productdetails-view .addtocart-bar span.quantity-controls{
+	margin-left: 20px;
+}
+#tcvn-content .compoment .productdetails-view .addtocart-bar span.addtocart-button{
+	margin-left: 35px;
+	width: auto;
+}
+#tcvn-content .compoment .span7 .spacer-buy-area .vote .rate{
+	float: left;
+	margin-right: 5px;
+    margin-top: 5px;
+}
+#myTab{
+	margin-bottom: 0 !important;
+    border: 0 !important;
+}
+#tcvn-content .compoment .tab-content{
+	background: #FFFFFF;
+	border: 1px  solid #EAEAEA;
+	padding: 15px;
+	min-height: 200px;
+    border-radius: 0 4px 4px 4px;
+}
+#myTab a .title{
+	text-decoration: none;
+	border-bottom: none;
+    margin: 0;
+}
+#myTab li.active a{
+	background: #FFFFFF;
+	border-top: 1px #EAEAEA solid;
+    border-left: 1px #EAEAEA solid;
+    border-right: 1px #EAEAEA solid;
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 0;
+    outline: none;
+    box-shadow: none;
+    color: #373737;
+}
+#myTab li a{
+    color: #FFFFFF;
+}
+#myTab li.active a:hover{
+    background-image: none !important;
+}
+#tcvn-content .spacer-buy-area .product-price .PricesalesPrice{
+	float: none;
+    width: 100%;
+}
+#tcvn-content .productdetails .product-related-products h4{
+	font-size: 18px;
+	/*font-family: 'nexa_lightregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	color: #7A7A7A;
+    float: left;
+    line-height: 30px;
+}
+#tcvn-content .productdetails .product-field{
+	text-align: center;
+}
+#tcvn-content .productdetails .product-field span.product-field-display img{
+	width: 140px;
+	height: 138px;
+	padding: 6px;
+	background-color: #FFFFFF;
+	border: 2px solid #F0F0F0;
+    margin: 0 auto 10px;
+}
+#tcvn-content .productdetails .product-field span.product-field-display a:hover img{
+	border: 2px solid #1CA4DC;
+}
+#tcvn-content .productdetails .product-field span.product-field-display a:hover{
+    text-decoration: none;
+}
+#tcvn-content .product-related-products .product-field-display,
+#tcvn-content .product-related-products .product-field-display a{
+    display: block;
+}
+#tcvn-content div.availability{
+    text-align: left;
+    margin: 0 !important;
+}
+#tcvn-content div.availability img.availability{
+    margin-top: 5px;
+}
+
+#tcvn-content .product_content .manufacturer{
+    margin: 0;
+}
+#tcvn-content .product-short-description h6.title{
+    margin: 0;
+}
+#tcvn-content .productdetails-view .product-short-description{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+#tcvn-content .productdetails-view .product-short-description ul{
+    margin: 0;
+    list-style-position: inside;
+}
+#tcvn-content .productdetails-view .main-image{
+    padding: 10px 0;
+    background-color: #FFFFFF;
+}
+#tcvn-content .productdetails-view .icons,
+#tcvn-content .productdetails-view .ask-a-question{
+    margin: 2px 0 0;
+    float: left;
+    display: inline-block;
+}
+#tcvn-content .productdetails-view .ask-a-question{
+    padding-left: 5px;
+}
+#tcvn-content .productdetails-view .icons a{
+    display: inline-block;
+    padding: 4px 3px;
+}
+#tcvn-content .productdetails-view .icons a:first-child{
+    padding-left: 0px;
+}
+#tcvn-content .productdetails-view .icons .modal{
+    position: relative;
+}
+#tcvn-content .productdetails-view .ask-a-question a{
+    padding: 0 10px 1px;
+}
+#tcvn-content .productdetails-view .product-neighbours{
+    float: right;
+    margin: 0;
+}
+
+#tcvn-content .productdetails-view .product-neighbours a.next-page,
+#tcvn-content .productdetails-view .product-neighbours a.previous-page{
+    height: 29px;
+    width: 1px;
+    background-image: url("../images/bg-neighbours.png");
+    background-repeat: no-repeat;
+}
+#tcvn-content .productdetails-view .product-neighbours a.next-page{
+    background-position: -33px 0;
+}
+#tcvn-content .product-related-products, #tcvn-content .product-related-categories{
+    border-top: none;
+}
+#tcvn-content .product-related-products .product-field{
+    padding: 5px 0 5px;
+}
+
+/*vm-Cart*/
+#tcvn-content .cart-view,
+#tcvn-content .manufacturer-details-view{
+    border: 1px solid #E3E1E1;
+    border-radius: 4px;
+    background: #FFFFFF;
+}
+#tcvn-content .cart-view .cart-title{
+    position: relative;
+}
+#tcvn-content .cart-view .cart-title .continue-shopping{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    line-height: 38px;
+}
+#tcvn-content .cart-view h3,
+#tcvn-content .manufacturer-details-view h1{
+    padding-left: 10px;
+    background-image: -moz-linear-gradient(center bottom , #EDEBEB -3.44%, #FBFBFB 96.56%);
+    margin-top: 0;
+    border-radius: 4px 4px 0 0;
+}
+#com-form-login{
+    padding: 0 10px;
+    margin-bottom: 0;
+}
+#com-form-login .userdata{
+    margin-bottom: 0;
+}
+#com-form-login .inputbox {
+    width: 180px;
+}
+#com-form-login-remember .default {
+    padding: 6px 15px;
+    float: left;
+}
+#com-form-login-remember label{
+    float: left;
+    padding: 4px 0 0;
+}
+#remember{
+    width: auto !important;
+    float: left;
+    margin: 8px 5px 0 10px;
+}
+#tcvn-content .vm2-add_quantity_cart{
+    width: 22px !important;
+}
+#tcvn-content .billto-shipto{
+    padding: 10px 10px 25px;
+}
+#tcvn-content .cart-summary .pricetax .PricetaxAmount{
+    display: inline-block !important;
+}
+.cart-products-are >div.color,
+.cart-products-are > .product_name{
+	font-size: 16px;
+	padding-bottom: 5px;
+}
+.cart-summary .cart-products-are{
+	padding: 30px 0;
+}
+.cart-products-are > .inline{
+	padding: 10px 0;
+}
+.quantity-input.js-recalculate{
+	margin: 0 !important;
+}
+.tcvn-vmicon.tcvn_remove_from_cart{
+	font-size: 11px;
+}
+.cart-summary .row-fluid.cart-products-sectiontab{
+	border-bottom: 1px solid #E9E8E8;
+}
+.cart-summary .row-fluid.cart-products-sectiontab > div:last-child{
+	border: none;
+}
+#tcvn-content .cart-summary .trmargin{
+    padding: 0 10px;
+}
+#tcvn-content .cart-summary .product-prices-result td:first-child{
+    text-align: right !important;
+    padding-right: 20px;
+    font-weight: bold;
+}
+#tcvn-content .cart-summary .cart-products-sectiontab td{
+    padding: 5px;
+}
+#tcvn-content table.cart-summary tr th {
+    padding: 6px 0 3px 5px;
+}
+#userForm{
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    padding-left: 10px;
+}
+#userForm input.coupon,
+#userForm span.details-button{
+    float: left;
+    display: block;
+}
+
+#tcvn-content span.details-button input.details-button{
+    padding: 6px 30px;
+}
+#tcvn-content span.details-button input.details-button:hover{
+    background-image: linear-gradient(to bottom, #E8E8E8, #f0eeee);
+}
+
+#tcvn-content .vmpayment_name, #tcvn-content .vmpayment_cost, #tcvn-content .vmshipment_name, #tcvn-content .vmshipment_cost {
+    padding: 0 10px;
+}
+#tcvn-content .total-sectiontab{
+    text-align: right !important;
+    padding-right: 20px;
+    font-weight: bold;
+}
+#checkoutForm .checkout-button-top{
+    padding-right: 10px;
+}
+#checkoutForm div.customer-comment{
+    padding-bottom: 10px;
+}
+/*vm-SocialSharing*/
+.itemSocialSharing{
+    padding-bottom: 10px;
+}
+.itemSocialSharing h3{
+    border-bottom: 1px solid #E3E1E1;
+}
+.itemSocialSharing .socialSharing{
+    float: left;
+    margin-right: 30px;
+}
+.itemSocialSharing .itemTwitterButton{
+    margin-right: 0;
+}
+/*vm-pagination*/
+.vm-pagination{
+	overflow: hidden;
+}
+.vm-pagination ul{
+	margin: 10px 0 !important;
+}
+.vm-pagination ul li a,
+.vm-pagination ul li span{
+	padding: 0 5px;
+}
+#tcvn-content .login-wrapper{
+    padding: 0 10px;
+    border: 1px solid #E3E1E1;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    background: #FFFFFF;
+}
+#tcvn-content .login h1{
+    margin-top: 0;
+}
+#tcvn-content .login .login-fields{
+    position: relative;
+}
+#tcvn-content .login input#remember{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px 0;
+}
+#tcvn-content .login label#remember-lbl{
+    padding-left: 20px;
+}
+form#member-registration{
+    background: #FFFFFF;
+}
+form#member-registration,
+#tcvn-content .item-page{
+    padding: 0 10px 10px 10px;
+    border-radius: 4px;
+    border: 1px solid #E3E1E1;
+}
+#tcvn-content .item-page h2{
+    margin-top: 0;
+}
+ul.actions{
+    margin-left: 0;
+}
+ul.actions li{
+    display: inline-block;
+}
+ul.pagenav{
+    margin: 0;
+    text-align: center;
+
+ }
+ul.pagenav li{
+    display: inline-block;
+    margin: 0 10px;
+}
+#tcvn-content .manufacturer-details-view .manufacturer-image{
+    float: right;
+}
+#tcvn-content .manufacturer-details-view .manufacturer-email,
+#tcvn-content .manufacturer-details-view .manufacturer-url,
+#tcvn-content .manufacturer-details-view .manufacturer-product-link{
+    display: block;
+    overflow: hidden;
+}
+#tcvn-content .manufacturer-details-view a{
+    display: block;
+    margin: 7px 0;
+}
+#tcvn-content fieldset.userfields{
+    padding: 0 10px;
+}
+form#userForm .control-buttons{
+    text-align: center !important;
+    padding: 10px;
+}
+form#userForm input[type*=text],
+form#userForm input[type*=password]{
+    max-width: 80%;
+}
+.show_cart a.btn.btn-primary{
+    color: #ffffff !important;
+}
+a.vm-button-correct span{
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+#user-3{
+    text-align: center;
+}
+#user-3 li{
+    display: inline-block;
+    padding: 0 14px 30px !important;
+}
+#user-3 li a{
+    width: 18px;
+    height: 18px;
+    display: block;
+    padding: 0 !important;
+}
+#user-3 li a span{
+    display: none;
+}
+
+/* bacjk to top */
+#tcvn-backtop{
+    width: 33px;
+    height: 47px;
+    position: absolute;
+    right: 7px;
+    bottom: -9px;
+    cursor: pointer;
+}
+#tcvn-backtop span{
+    display: none;
+}
+
+.img-intro-left{
+    float: left;
+    background-color: #FFFFFF;
+    width: 99%;
+
+}
+.img-intro-left img{
+    border: 1px solid #cccccc;
+}
+.items-leading .img-intro-left{
+    width: 325px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+.blog .items-more,
+.blog .items-leading > div,
+.blog .item {
+    border: 1px solid #E3E1E1;
+    border-radius: 4px;
+    -moz-border-radius: 4px ;
+    -webkit-border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.blog h3{
+    line-height: 20px;
+}
+
+.pagination{
+    text-align: center;
+}
+.pagination ul{
+    margin-bottom: 0 !important;
+}
+.pagination p{
+    margin-bottom: 10px !important;
+}
+
+.contact {
+    background: #FFFFFF;
+    padding: 0 10px;
+}
+.contact .vnaddress .contact-address .jicons-icons{
+    float: left;
+    margin-right: 2px;
+}
+.contact .contact-image img{
+    margin-top: -65px;
+}
+.contact address,
+.contact p{
+    margin-bottom: 10px !important;
+}
+#contact-form legend{
+    font-size: 13px;
+}
+#contact-form input[type=text],
+#contact-form input[type=email],
+#contact-form textarea {
+    min-width: 350px;
+}
+.contact h2.contact-title{
+    background-image: -moz-linear-gradient(center bottom , #EDEBEB -3.44%, #FBFBFB 96.56%);
+    border-radius: 4px 4px 0 0;
+    margin-top: 0;
+    padding-left: 10px;
+    width: 100%;
+    padding: 0 10px;
+    margin-left: -10px;
+}
+.categories-list ul ul{
+	padding: 0 0 0 60px;
+}
+#tcvn-content .item-page{
+    padding: 10px;
+}
+
+.item-page .pagenav .pagenav-prev a {
+    float: left;
+}
+.item-page .pagenav a {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    padding: 5px 14px;
+}
+.item-page .pagenav{
+    overflow: hidden;
+}
+.item-page .pagenav .pagenav-next a {
+    float: right;
+}
+.item-page .pagenav a {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    padding: 5px 14px;
+}
+.readmore .btn.btn-primary{
+    color: #FFFFFF !important;
+    padding: 2px 8px;
+}
+p.counter{
+    text-align: center;
+}
+.items-leading,
+.items-row {
+    margin-bottom: 15px;
+}
+#tcvn-content .page-header h3{
+    line-height: 20px;
+}
+.orderlistcontainer div.orderlist > div,
+.orderlistcontainer div.activeOrder{
+	min-width: 120px;
+	padding: 2px 24px 1px 12px;
+}
+.orderlistcontainer,
+.display-number{
+	padding: 3px 0;
+}
+table.cart-summary tr td:last-child {
+	padding-right: 5px;
+}
+.vmproduct .span34 {
+	margin-left: 0 !important;
+}
+ul.slider-product{
+	margin-bottom: 15px !important;
+}
+#tcvn-promotion .promotion{
+	background-position: center center !important;
+}
+.additional-images > div{
+	min-width: 50px;
+}

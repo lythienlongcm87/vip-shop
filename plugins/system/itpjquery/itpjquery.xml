@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_ITPJQUERY</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2013 ITPrism.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>1.4</version>
+    <creationDate>16 December, 2013</creationDate>
+    <description><![CDATA[
+    <p><a href="http://itprism.com/free-joomla-extensions/others/plugin-jquery-implementation" target="_blank">ITP jQuery</a> is a plugin that loads jQuery library.</p>
+    <p><a href='http://itprism.com/help/96-jquery-plugin-documentation-faq' target='_blank'>Read documentation</a> that will help you to setup the extensions.</p>
+    <p>Invest in the extension improvement. You can <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor the extension via SMS, PayPal or Bitcoin</a>.</p>
+    <p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+    <p>Please, <a href="http://extensions.joomla.org/extensions/core-enhancements/performance/jquery-scripts/24427" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+    ]]></description>
+    
+    <files>
+        <filename plugin="itpjquery">itpjquery.php</filename>
+		<filename>index.html</filename>
+		<filename>README.md</filename>
+
+		<folder>js</folder>
+		<folder>language</folder>
+    </files>
+    
+    <help url="PLG_SYSTEM_ITPJQUERY_HELP_URL"/>
+    
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+			    <field name="jquery_server" type="list" default="0" label="PLG_SYSTEM_ITPJQUERY_SERVER" description="PLG_SYSTEM_ITPJQUERY_SERVER_DESC" >
+                   <option value="0">Localhost</option>
+                   <option value="1">jQuery CDN</option>
+                   <option value="2">Google CDN</option>
+                   <option value="3">Microsoft CDN</option>
+                   <option value="4">CDN JS</option>
+                </field>
+                <field name="jquery_library" type="list" default="2.0.2" label="PLG_SYSTEM_ITPJQUERY_VERSION" description="PLG_SYSTEM_ITPJQUERY_VERSION_DESC" >
+                   <option value="1.8.3">1.8.3</option>
+                   <option value="1.10.2">1.10.2</option>
+                   <option value="2.0.3">2.0.3</option>
+                </field>
+                
+                <field name="jquery_noconflict" type="list" default="0" label="PLG_SYSTEM_ITPJQUERY_NOCONFLICT" description="PLG_SYSTEM_ITPJQUERY_NOCONFLICT_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                
+                <field name="jquery_migrate" type="radio" default="0" label="PLG_SYSTEM_ITPJQUERY_MIGRATE" description="PLG_SYSTEM_ITPJQUERY_MIGRATE_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                
+                <field name="jquery_backend" type="radio" default="0" label="PLG_SYSTEM_ITPJQUERY_BACKEND" description="PLG_SYSTEM_ITPJQUERY_BACKEND_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+		  </fieldset>
+          
+          <fieldset name="advanced">
+                <field name="ignored" type="textarea" label="PLG_SYSTEM_ITPJQUERY_IGNORED_SCRIPTS" description="PLG_SYSTEM_ITPJQUERY_IGNORED_SCRIPTS_DESC" rows="10" cols="30"/>
+          </fieldset>
+	   </fields>
+	</config>
+</extension>

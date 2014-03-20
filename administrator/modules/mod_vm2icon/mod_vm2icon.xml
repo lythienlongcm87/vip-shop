@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.0"
+	client="administrator" method="upgrade">
+	<name>mod_vm2icon</name>
+	<author>P. Kohl(Studio 42 France)</author>
+	<authorEmail>contact@st42.fr</authorEmail>
+    <creationDate>June 2012</creationDate>
+    <authorUrl>http://www.st42.fr</authorUrl>
+    <copyright>Copyright (C) 2012 Studio42 France. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+
+	<version>1.0</version>
+	<description>MOD_VM2ICON_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_vm2icon">mod_vm2icon.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+	</files>
+<!-- 	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_vm2icon.ini</language>
+		<language tag="en-GB">en-GB.mod_vm2icon.sys.ini</language>
+	</languages> -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="virtuemart" type="radio" default="1" label="virtuemart">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="category" type="radio" default="1" label="category">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="product" type="radio" default="1" label="product">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="ratings" type="radio" default="1" label="ratings">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="inventory" type="radio" default="1" label="inventory">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="orders" type="radio" default="1" label="orders">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="report" type="radio" default="1" label="report">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="user" type="radio" default="1" label="user">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="config" type="radio" default="1" label="config">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="editshop" type="radio" default="1" label="editshop">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="documentation" type="radio" default="1" label="documentation">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="forum" type="radio" default="1" label="forum">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="website" type="radio" default="1" label="Virtuemart 2">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="extention" type="radio" default="1" label="VM2 Extentions">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="studio42" type="radio" default="1" label="Studio 42">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="vmg" type="radio" default="1" label="Google Export">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="translator" type="radio" default="1" label="Translator">
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+			</fieldset>
+		</fields>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="automatic_title"
+					type="radio"
+					default="0"
+					label="COM_MODULES_FIELD_AUTOMATIC_TITLE_LABEL"
+					description="COM_MODULES_FIELD_AUTOMATIC_TITLE_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

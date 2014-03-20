@@ -1,0 +1,303 @@
+@charset "utf-8";
+/*=========================================================================
+# Joomla 2.5 Template - Alevel Shop
+# =========================================================================
+# Author    TheCoders.vn
+# Copyright Copyright (C) 2013 Thecoders.vn. All Rights Reserved.
+# License - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://thecoders.vn
+# Live Demo: http://gatheme.com
+# Technical Support:  Forum - http://laptrinhvien-vn.com
+  =======================================================================*/
+/* `XHTML, HTML4, HTML5 Reset
+/*=============================CSS Document==============================*/
+
+/* font-face */
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_bold-webfont.eot');
+    src: url('../fonts/nexa_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/nexa_bold-webfont.woff') format('woff'),
+    url('../fonts/nexa_bold-webfont.ttf') format('truetype'),
+    url('../fonts/nexa_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/Helvetica_Neue.eot');
+    src: url('../fonts/Helvetica_Neue.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Helvetica_Neue.woff') format('woff'),
+    url('../fonts/Helvetica_Neue.ttf') format('truetype'),
+    url('../fonts/Helvetica_Neue.svg#Helvetica_Neue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../fonts/nexa_light-webfont.eot');
+    src: url('../fonts/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/nexa_light-webfont.woff') format('woff'),
+    url('../fonts/nexa_light-webfont.ttf') format('truetype'),
+    url('../fonts/nexa_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+html, body {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+b, strong {
+	font-weight: bold;
+}
+img {
+	color: transparent;
+	font-size: 0;
+	vertical-align: middle;
+	-ms-interpolation-mode: bicubic;
+}
+ol,
+ul {
+	list-style: none;
+}
+#tcvn-body ul {
+    margin-left: 0 !important;
+}
+li {
+	display: list-item;
+}
+#tcvn-body table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#tcvn-body th, #tcvn-body td, #tcvn-body caption {
+	font-weight: normal;
+	vertical-align: top;
+}
+q {
+	quotes: none;
+} 
+q:after,
+q:before, {
+	content: "";
+	content: none;
+}
+sub, sup, small {
+	font-size: 75%;
+}
+sub, sup {
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sub {
+	bottom: -0.25em;
+}
+sup {
+	top: -0.5em;
+}
+svg {
+	overflow: hidden;
+}
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+pre, code {
+	font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace;
+}
+hr {
+	border: 0 solid #ccc;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+.clear{
+    clear: both;
+    height: 0;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+#tcvn-body{
+	/*font: 12px/18px Helvetica,sans-serif;*/
+        font:12px/18px;
+        font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+}
+#tcvn-body input ,#tcvn-body button, #tcvn-body select, #tcvn-body textarea{
+	/*font-family: Helvetica,sans-serif;*/
+        font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+}
+#tcvn-body input[type*=submit]{
+	/*font-family: 'nexa_boldregular';*/
+	font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+}
+#tcvn-body h1 {
+	font-size: 30px;
+}
+#tcvn-body h2 {
+	font-size: 24px;
+}
+#tcvn-body h3 {
+	font-size: 18px;
+}
+#tcvn-body h4 {
+	font-size: 16px;
+}
+#tcvn-body h5 {
+	font-size: 15px;
+}
+#tcvn-body h6 {
+	font-size: 14px;
+}
+#tcvn-body h1 ,
+#tcvn-body h2 ,
+#tcvn-body h3 ,
+#tcvn-body h4 ,
+#tcvn-body h5 ,
+#tcvn-body h6{
+    /*font-family: 'nexa_lightregular';*/
+    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+    font-weight: bold;
+}
+#tcvn-body p,
+#tcvn-body dl,
+#tcvn-body hr,
+#tcvn-body h1,
+#tcvn-body h2,
+#tcvn-body h3,
+#tcvn-body h4,
+#tcvn-body h5,
+#tcvn-body h6,
+#tcvn-body ol,
+#tcvn-body ul,
+#tcvn-body pre,
+#tcvn-body table,
+#tcvn-body address,
+#tcvn-body fieldset,
+#tcvn-body figure {
+	margin-bottom: 20px;
+}
+#tcvn-body input[type*=text],
+#tcvn-body input[type*=password]{
+    outline: none !important;
+}
+.tcvn-group1{
+	width: 100%;
+}
+.tcvn-group2{
+	width: 49%;
+}
+.tcvn-group3{
+	width: 32%;
+}
+.tcvn-group4{
+	width: 23.5%;
+}
+.tcvn-group5{
+	width: 18.4%;
+}
+[class *= tcvn-group]{
+    float: left;
+    margin-left: 2%;
+}
+[class *= tcvn-group]:first-child{
+	margin-left: 0;
+}
+.tcvn-border{
+    border: 1px solid #E3E1E1;
+}
+.tcvn-border-rad{
+	border: 1px solid #E3E1E1;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	padding: 10px;
+	background: #ffffff;
+}
+/* buttom */
+
+.tcvn-btn,
+.tcvn-btn:after,
+.tcvn-btn:before,
+.tcvn-btn-primary,
+.tcvn-btn-primary:after,
+.tcvn-btn-primary:before {
+    outline: medium none !important;
+}
+.tcvn-btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #A2A2A2;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+.tcvn-btn:hover,
+.tcvn-btn:active,
+.tcvn-btn.active,
+.tcvn-btn.disabled,
+.tcvn-btn[disabled] {
+    background-color: #E6E6E6;
+    color: #333333;
+}
+.tcvn-btn-primary {
+    background-color: #006DCC;
+    background-image: linear-gradient(to bottom, #0088CC, #0044CC);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.tcvn-btn-primary:hover,
+.tcvn-btn-primary:active,
+.tcvn-btn-primary.active,
+.tcvn-btn-primary.disabled,
+.tcvn-btn-primary[disabled] {
+    background-color: #0044CC;
+    color: #FFFFFF;
+}
+
+/* bootstrap*/
+.btn,
+.btn:after,
+.btn:before,
+.btn-primary,
+.btn-primary:after,
+.btn-primary:before {
+    outline: medium none !important;
+}
+
+

@@ -1,0 +1,38 @@
+/**
+ * MoWebSo Library
+ *
+ * The MoWebSo Is The Foundation For All MoWebSo Extensions
+ *
+ * @package 	    Backend / Library
+ * @author 		    MoWebSo.com / Eugen Stranz
+ * @copyright       (C) 2009 - 2013 ENYtheme e.K.
+ */
+
+
+span.grid-1, span.grid-2, span.grid-3, span.grid-4, span.grid-5, span.grid-6, span.grid-7, span.grid-8, span.grid-9, span.grid-10, span.grid-11, span.grid-12 {display: inline-block;text-align: center;border: solid #777 1px;padding: 6px 0px 3px 0px;}
+
+
+span.grid-1 {width: 15px;}
+span.grid-2 {width: 30px;}
+span.grid-3 {width: 45px;}
+span.grid-4 {width: 60px;}
+span.grid-5 {width: 75px;}
+span.grid-6 {width: 90px;}
+span.grid-7 {width: 105px;}
+span.grid-8 {width: 120px;}
+span.grid-9 {width: 135px;}
+span.grid-10 {width: 150px;}
+span.grid-11 {width: 165px;}
+span.grid-12 {width: 180px;}
+
+
+.clear {clear: both;}
+
+.grid-blocks {margin: 0px 0px 10px 0px;}
+
+.modulegrid-container {margin: 0px 0px 30px 0px;padding: 40px 0px 0px 0px;}
+.modulegrid-container ul.grid-no {margin: 0px 0px 10px 0px;}
+.modulegrid-container ul.grid-no li {display: inline-block;border: solid #777 1px;padding: 3px 5px 1px 5px;margin: 0px 5px 0px 0px;cursor: pointer;}
+.modulegrid-container ul.grid-no li.current {background: #777;color: #fff;}
+
+.modulegrid-container input {display: none;}

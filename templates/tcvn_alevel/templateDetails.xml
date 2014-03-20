@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrade">
+	<name>TCVN_alevel</name>
+	<creationDate>May 5, 2013</creationDate>
+	<author>Thecoders.vn</author>
+	<authorEmail>mr_hiennc@yahoo.com</authorEmail>
+	<authorUrl>http://thecoders.vn</authorUrl>
+	<copyright>Copyright (C) 2013 Thecoders.vn. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	
+	<description>
+		<![CDATA[ <div style="font-size:10px;">
+			<a target="_blank" href="http://TheCoders.vn"><b>aLevel Shop - Free Responsive Virtuemart Template</b></a><br><br>
+				<i>aLevel Shop have been designed as a simple guide and to present Very Flexible, Clean. Make them easy to prepare and to make sure they can be understood by readers. Built with HTML5 & CSS3, a lot of thought and care went into template making it a pleasure to use. This Template ready for use Industries, School, Shop and any business. The template comes with a host of features leaving you with almost endless possibilities when laying out your content including multiple layout options. 20+ module positions with total width control, easy edit logo and use Twitter Bootstrap in all within a Fully Responsive Design that adapts screen size. You can discover many new awesome features in this template.
+				</i><br><br>
+			<a target="_blank" href="http://TheCoders.vn"><i>TheCoders.vn - Free Joomla 2.5 Extensions, Joomla Modules, Joomla Plugins.</i></a>
+		</div>]]>
+	</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>js</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>libs</folder>
+		<folder>language</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+    <positions>
+		<position>breadcrumbs</position>
+        <position>promotion</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+        <position>position-11</position>
+        <position>position-12</position>
+        <position>position-13</position>
+        <position>right-1</position>
+        <position>right-2</position>
+        <position>right-3</position>
+		
+		<position>user-1</position>
+		<position>user-2</position>
+		<position>user-3</position>
+		
+		<position>left</position>
+		<position>right</position>
+		<position>slideshow</position>
+        <position>slideshow-fluid</position>
+		<position>top-menu</position>
+        <position>footer-menu</position>
+        <position>coppyright</position>
+	</positions>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_tcvn_alevel.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params" addfieldpath="templates/tcvn_alevel/libs/elements">
+			<fieldset name="basic">
+				<field 
+					name="templateWidth" 
+					type="radio" 
+					default="1"
+					label="TPL_OF_THECODER_TEMPLATE_WIDTH" 
+					description="TPL_OF_THECODER_TEMPLATE_WIDTH_DESC">
+						<option value="0">Static</option>
+						<option value="1">Fluid</option>
+				</field>
+				<field 
+					name="columnWidth" 
+					type="list" 
+					default="3" 
+					label="TPL_OF_THECODER_COLUMN_WIDTH" 
+					description="TPL_OF_THECODER_COLUMN_WIDTH_DESC">
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+				</field>
+                <field
+                    name="loadjquery"
+                    type="radio"
+                    default="1"
+                    label="TPL_OF_THECODER_LOAD_JQUERY"
+                    description="TPL_OF_THECODER_LOAD_JQUER_DESC">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </field>
+                <field
+                    name="templatecolor"
+                    type="radio"
+                    default="blue"
+                    label="TPL_OF_THECODER_TEMPLATE_COLOR"
+                    description="TPL_OF_THECODER_TEMPLATE_COLOR_DESC">
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="orange">Orange </option>
+                </field>
+
+                <field
+                    name="backtotop"
+                    type="radio"
+                    default="1"
+                    label="TPL_OF_THECODER_BACK_TO_TOP"
+                    description="TPL_OF_THECODER_BACK_TO_TOP_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+			</fieldset>
+			
+			<fieldset name="LOGO">
+				<field type="xspacer" />
+				<field 
+					name="logo" 
+					type="media"
+					label="TPL_OF_THECODER_LOGO" 
+					description="TPL_OF_THECODER_LOGO_DESC" 
+					default="" />
+				<field 
+					name="siteTitle" 
+					type="text" 
+					default=""
+					label="TPL_OF_THECODER_SITETITLE"
+					description="TPL_OF_THECODER_SITETITLE"
+					size="50"
+					filter="string" />
+				<field 
+					name="siteDescription"  
+					type="text" 
+					default=""
+					label="TPL_OF_THECODER_DESCRIPTION"
+					description="TPL_OF_THECODER_DESCRIPTION_DESC"
+					size="50"
+					filter="string" />
+                <field
+                        name="logoWidth"
+                        type="list"
+                        default="3"
+                        label="TPL_OF_THECODER_LOGO_WIDTH"
+                        description="TPL_OF_THECODER_LOGO_WIDTH_DESC">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </field>
+				<field 
+					name="copyright" 
+					type="text" 
+					default="Copyright 2013 (c) Thecoders.vn. All rights reserved."
+					label="TPL_OF_THECODER_COPYRIGHT"
+					description="TPL_OF_THECODER_COPYRIGHT_DESC"
+					size="50"
+					filter="string" />
+				<field 
+					name="customcss" 
+					type="radio" 
+					default="1" 
+					label="TPL_OF_THECODER_CUSTOM_CSS" 
+					description="TPL_OF_THECODER_CUSTOM_CSS_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>								
+			</fieldset>
+		</fields>
+	</config>
+</extension>

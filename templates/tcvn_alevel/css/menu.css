@@ -1,0 +1,164 @@
+@charset "utf-8";
+/*=========================================================================
+# Joomla 2.5 Template - Alevel Shop
+# =========================================================================
+# Author    TheCoders.vn
+# Copyright Copyright (C) 2013 Thecoders.vn. All Rights Reserved.
+# License - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://thecoders.vn
+# Live Demo: http://gatheme.com
+# Technical Support:  Forum - http://laptrinhvien-vn.com
+  =======================================================================*/
+/* `XHTML, HTML4, HTML5 Reset
+/*=============================CSS Document==============================*/
+/*== top menu ==*/
+#tcvn-top-menu .navbar {
+    margin: 0px;
+}
+#tcvn-top-menu .navbar .nav {
+    float: right;
+    margin: 0;
+}
+#tcvn-top-menu .navbar-inner {
+    padding-left: 0;
+    padding-right: 0;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    filter: none;
+    /*progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0)*/
+}
+#tcvn-top-menu .navbar .nav > li:last-child a {
+    margin-right: 0 !important;
+}
+#tcvn-top-menu .menu li a {
+    margin: 0 1px !important;
+    /*font-family: 'nexa_boldregular';*/
+    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+	font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+}
+#tcvn-top-menu .menu li a:hover,
+#tcvn-top-menu .menu li a:visited,
+#tcvn-top-menu .menu li a:active,
+#tcvn-top-menu .navbar .nav > .active > a,
+#tcvn-top-menu .navbar .nav > .active > a:hover,
+#tcvn-top-menu .navbar .nav > .active > a:focus,
+#tcvn-top-menu .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+#tcvn-top-menu .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+#tcvn-top-menu .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+    box-shadow: -1px 1px 1px #3C4041;
+    transition: all 0.4s linear 0s;
+    font-size: 16px;
+}
+#tcvn-top-menu .navbar .brand {
+    display: none;
+    margin-left: 0;
+}
+#tcvn-top-menu .open > .dropdown-menu {
+    width: 196px;
+    margin-top: 5px;
+}
+#tcvn-top-menu .open > .dropdown-menu li {
+    height: 26px !important;
+    margin: 8px 0;
+}
+#tcvn-top-menu .open > .dropdown-menu li > a,
+#tcvn-top-menu .open > .dropdown-menu li > span.separator {
+    padding: 0 25px;
+    font-size: 12px;
+    color: #6e6e6e;
+    line-height: 23px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    /*font-family: helvetica;*/
+}
+#tcvn-top-menu .open > .dropdown-menu li span.separator{
+	display:block;
+	text-transform: uppercase;
+}
+#tcvn-top-menu .open .dropdown-menu li:hover > a, 
+#tcvn-top-menu .open .dropdown-menu li:focus > a, 
+#tcvn-top-menu .open .dropdown-menu li.active > a,
+#tcvn-top-menu .open > .dropdown-menu li:hover span.separator,
+#tcvn-top-menu .open > .dropdown-menu li:focus span.separator,
+#tcvn-top-menu .open > .dropdown-menu li:active span.separator {
+    background: url("../images/bg_a_dropdown-menu_hover.png") no-repeat 9px center !important;
+    color: #ffffff !important;
+}
+#tcvn-top-menu .open .dropdown-menu li:hover,
+#tcvn-top-menu .open .dropdown-menu li:focus,
+#tcvn-top-menu .open .dropdown-menu li.active {
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 200px !important;
+}
+#tcvn-top-menu .open .dropdown-menu li.active a {
+    background-color: transparent !important;
+}
+
+/* right-menu */
+
+#tcvn-right .right-wrapper ul{
+    margin: 10px 0;
+    padding: 0;
+}
+#tcvn-right .right-wrapper ul ul{
+    margin: 0;
+    padding: 0 0 0 30px;
+}
+#tcvn-right .right-wrapper ul li{
+    padding: 0 16px 0 5px;
+    position: relative;
+    margin: 3px 0 3px -5px;
+}
+#tcvn-right .right-wrapper ul li div{
+    padding: 0 0 0 5px;
+    width: 100%;
+    margin-left: -5px;
+}
+#tcvn-right .right-wrapper ul.menu > li.active > div{
+    box-shadow: -1px 1px 2px #6B6B6B;
+}
+#tcvn-right .right-wrapper ul ul li div{
+    margin: 0;
+}
+#tcvn-right .right-wrapper ul li span.arrow{
+    width: 16px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#tcvn-right .right-wrapper ul li div:hover{
+    box-shadow: -1px 1px 2px #6B6B6B;
+}
+#tcvn-right .right-wrapper ul li div:hover a,
+#tcvn-right .right-wrapper ul.menu > li.active > div > a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#tcvn-right .right-wrapper ul li a{
+    display: block;
+    padding-left: 20px;
+    line-height: 30px;
+}
+#tcvn-right .right-wrapper li ul a{
+    background: url("../images/right-arrow.png") no-repeat left center ;
+}
+#tcvn-right .right-wrapper li ul div:hover a{
+    background: url("../images/right-arrow-hover.png") no-repeat left center ;
+}
+#tcvn-right .right-wrapper li .img-categorys{
+    margin-right: 3px;
+}

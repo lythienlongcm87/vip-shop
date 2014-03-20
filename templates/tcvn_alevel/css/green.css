@@ -1,0 +1,218 @@
+@charset "utf-8";
+/*=========================================================================
+# Joomla 2.5 Template - Alevel Shop
+# =========================================================================
+# Author    TheCoders.vn
+# Copyright Copyright (C) 2013 Thecoders.vn. All Rights Reserved.
+# License - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://thecoders.vn
+# Live Demo: http://gatheme.com
+# Technical Support:  Forum - http://laptrinhvien-vn.com
+  =======================================================================*/
+/* `XHTML, HTML4, HTML5 Reset
+/*=============================CSS Document==============================*/
+.moduletable-xstyle.slider-product .prev-item,
+.moduletable-xstyle.slider-product .next-item,
+.tcvn-color,
+#tcvn-content ul.tabs,
+#product-presenter ul.category-names-top ,
+.moduletable-xstyle .title h3,
+table.acymailing_form .button,
+#tcvn-top-menu .menu li a:hover,
+#tcvn-top-menu .menu li a:visited,
+#tcvn-top-menu .menu li a:active,
+#tcvn-top-menu .navbar .nav > .active > a,
+#tcvn-top-menu .navbar .nav > .active > a:hover,
+#tcvn-top-menu .navbar .nav > .active > a:focus,
+#tcvn-top-menu .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+#tcvn-top-menu .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+#tcvn-top-menu .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
+#tcvn-right .right-wrapper ul li div:hover,
+span.addtocart-button input.notify-button,
+#tcvn-right .right-wrapper ul.menu > li.active > div{
+    background: url("../images/bg-green.png") !important;
+}
+.yright-wrapper h3{
+    background: url("../images/bg-green-title-yright.png") no-repeat 50% 50%;
+}
+#tcvn-right .right-wrapper ul div:hover span.arrow,
+#tcvn-right .right-wrapper ul.menu > li.active > div > span.arrow{
+    background: url("../images/bg-green-arrow.png") repeat-x left top !important;
+}
+.the-new-imac .img-circle:hover{
+    border: 5px solid #75be38;
+}
+.the-new-imac a span.advertise-circle{
+    background-color: #75be38 !important;
+}
+#tcvn-user-2 ul.menu li a{
+    border-right: 1px solid #75be38;
+}
+.btn.btn-primary {
+    background-image: none;
+    background-color: #75be38;
+    background-image: -webkit-linear-gradient(to bottom, #B2F675, #75be38);
+    background-image: -moz-linear-gradient(to bottom, #B2F675, #75be38);
+    background-image: -o-linear-gradient(to bottom, #B2F675, #75be38);
+    background-image: -ms-linear-gradient(to bottom, #B2F675, #75be38);
+    background-image: linear-gradient(to bottom, #B2F675, #75be38);
+}
+.btn.btn-primary:hover,
+span.addtocart-button:hover {
+    background: #75be38 !important;
+    box-shadow: 0 0 3px #6B6B6B
+}
+#tcvn-container #tcvn-content .browse-view .spacer > a{
+    display: block;
+    background: url(../images/green-product-detail.png) no-repeat center center;
+}
+#tcvn-content .productdetails-view .product-short-description ul{
+    margin: 0;
+    list-style-image: url("../images/circle_blue.png");
+}
+#tcvn-content .productdetails .product-related-products h4{
+    border-bottom: 1px solid #75be38;
+}
+#tcvn-content .browse-view a.product-details  {
+    border-color: #75BE38;
+}
+#tcvn-user-1 .social a.facebook {
+    background-image: url("../images/green-facebook.png");
+    margin-left: 0;
+}
+#tcvn-user-1 .social a.google {
+    background-image: url("../images/green-google.png");
+}
+#tcvn-user-1 .social a.twitter {
+    background-image: url("../images/green-twitter.png");
+}
+#tcvn-user-1 .social a.feed {
+    background-image: url("../images/green-feed.png");
+}
+#tcvn-slideshow .tcvnRotatingImageButtons .button.selected {
+    background: url("../images/green-button-slide-on.png") no-repeat;
+}
+#tcvn-user-2 .show_cart span.shopping_cart, #tcvn-user-2 .show_cart a {
+    background: url("../images/green-bag.png") no-repeat left center;
+}
+#tcvn-user-2 .total_products span,
+#tcvn-user-2 form.tcvn-currency select#virtuemart_currency_id,
+#tcvn-user-2 form.tcvn-currency span.select {
+    color: #75be38;
+}
+#myTab li a{
+    background-color: #75BE38;
+    background-image: -webkit-linear-gradient(to bottom, #B2F675, #75BE38);
+    background-image: -moz-linear-gradient(to bottom, #B2F675, #75BE38);
+    background-image: -o-linear-gradient(to bottom, #B2F675, #75BE38);
+    background-image: -ms-linear-gradient(to bottom, #B2F675, #75BE38);
+    background-image: linear-gradient(to bottom, #B2F675, #75BE38);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+#myTab li a:hover{
+    background-image: linear-gradient(to bottom, #75BE38, #B2F675);
+}
+#tcvn-content h2.title,
+.vmproduct .product-price .PricesalesPrice,
+.vmproduct .PricesalesPrice .PricesalesPrice,
+#tcvn-content .product_content .PricesalesPrice,
+#tcvn-right .search h3,
+#tcvn-position-810 h2,
+#tcvn-position-10 p .color,
+#tcvn-right .yright-wrapper .yright-title span,
+.zright-wrapper .content .promotion-and-new,
+#tcvn-position-5 .payment h1,
+span.details-button input.details-button,
+#tcvn-footer li a:hover,
+#tcvn-footer li.active a,
+#tcvn-content .browse-view .spacer .PricetaxAmount,
+.coppyright span.color,
+#tcvn-top-menu .open > .dropdown-menu li span.separator{
+    color: #8cc840 !important;
+}
+#tcvn-body a,
+.color{
+    color: #8cc840 ;
+}
+#tcvn-right .right-wrapper .title{
+    border-bottom: 2px solid #8cc840;
+}
+#tcvn-right .right-wrapper.shopping-right h3{
+    background: url("../images/green-bag.png") no-repeat scroll left center;
+}
+#tcvn-right .right-wrapper.who-online h3{
+    background: url('../images/bg-green-who-online.png') no-repeat left center;
+}
+.yright-wrapper.best-sales .bg-best-sales{
+    background: url('../images/bg-green-best-saller.png') no-repeat left top;
+}
+#tcvn-top-menu .open > .dropdown-menu li > a,
+#tcvn-top-menu .open > .dropdown-menu li > span.separator  {
+    background: url("../images/bg_green_a_dropdown-menu.png") no-repeat 9px center !important;
+}
+#tcvn-top-menu .open .dropdown-menu li:hover,
+#tcvn-top-menu .open .dropdown-menu li:focus,
+#tcvn-top-menu .open .dropdown-menu li.active {
+    background-image: url("../images/bg-green-dropdown-menu.png") !important;
+}
+#tcvn-top-menu .open > .dropdown-menu {
+    border-bottom: 2px solid #8cc840;
+}
+#tcvn-position-8 .stepstobuy{
+    background: url("../images/bg-green-steps-to-buy.png") no-repeat;
+}
+#manufacturer-slider > span.next-item {
+    background-position: right top;
+}
+#manufacturer-slider > span.prev-item {
+    background-position: left top;
+}
+span.addtocart-button{
+    background-color: #75BE38;
+    background-image: -webkit-linear-gradient(to bottom, #B2F675, #75BE38);
+    background-image: -moz-linear-gradient(to bottom, #B2F675, #75BE38);
+    background-image: -o-linear-gradient(to bottom, #B2F675, #75BE38);
+    background-image: -ms-linear-gradient(to bottom, #B2F675, #75BE38);
+    background-image: linear-gradient(to bottom, #B2F675, #75BE38);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+#tcvn-content .detail .category-view .spacer:hover h2{
+    background: #8cc840;
+}
+#tcvn-backtop{
+    background: url("../images/bg-green-back-top.png") no-repeat;
+}
+#tcvn-promotion .promotion {
+    background: url("../images/bg-green-promotion.png") no-repeat;
+}
+#tcvn-position-9 ul.latestnews li div.latestnewstitle{
+    background: url("../images/green-arrow.png") no-repeat left center;
+}
+
+/* responsive */
+@media (max-width: 979px){
+    #tcvn-top-menu .open .dropdown-menu li[class*=item]:hover > a,
+    #tcvn-top-menu .open .dropdown-menu li[class*=item]:focus > a,
+    #tcvn-top-menu .open .dropdown-menu li[class*=item].active > a{
+        background: url("../images/bg_green_a_dropdown-menu.png") no-repeat scroll 9px center transparent !important;
+    }
+}
+#tcvn-slideshow-fluid {
+	background:url(../images/bg-slide-green.png) repeat-x bottom #FFFFFF;
+    border-bottom: 4px solid #8cc840;
+    background-image: -webkit-linear-gradient(center bottom, #b1eb69, #fdfdfd 23%);
+    background-image: -moz-linear-gradient(center bottom, #b1eb69, #fdfdfd 23%);
+    background-image: -o-linear-gradient(center bottom, #b1eb69, #fdfdfd 23%);
+    background-image: -ms-linear-gradient(center bottom, #b1eb69, #fdfdfd 23%);
+    background-image: linear-gradient(center bottom, #b1eb69, #fdfdfd 23%); 
+}
+.img-circle.bg-color{
+    background-color: #8cc840;
+}
+a.learn-more,
+#tcvn-slideshow-fluid .tp-leftarrow.default:hover,
+#tcvn-slideshow-fluid .tp-rightarrow.default:hover{
+    background-color: #8cc840;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+	<name>MoWebSo 2 Click Social Button</name>
+	<copyright>(C) 2009 - 2013 ENYtheme e.K.</copyright>
+	<license>GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<packagename>pkg_mowebso_2click_social</packagename>
+	<packager>MoWebSo.com / Eugen Stranz</packager>
+	<packagerurl>http://www.mowebso.com</packagerurl>
+	<author>MoWebSo.com / Eugen Stranz</author>
+	<authorEmail>info@mowebso.com</authorEmail>
+	<authorUrl>http://www.mowebso.com</authorUrl>
+	<url>http://www.mowebso.com</url>	
+	<description>PLEASE DO NOT FORGET TO PUBLISH THE PLUGIN</description>
+	<files folder="packages">
+		<file type="library" id="lib_mowebso" >lib_mowebso.zip</file>
+		<file type="plugin" id="plg_mowebso" group="system">plg_mowebso.zip</file>
+		<file type="plugin" id="plg_mowebso_2click_social" group="system">plg_mowebso_2click_social.zip</file>
+	</files>
+</extension>
