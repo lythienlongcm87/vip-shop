@@ -1,2 +1,0 @@
-<?php
-edho "test21";
