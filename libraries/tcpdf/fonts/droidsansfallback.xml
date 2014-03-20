@@ -1,0 +1,23 @@
+<install type="phocapdffonts" version="1.5" client="both" method="upgrade">
+    <name>Droidsansfallback</name>
+	<tag>droidsansfallback</tag>
+    <creationDate>01/01/2009</creationDate>
+    <author>Google</author>
+    <authorEmail></authorEmail>
+    <authorUrl></authorUrl>
+    <copyright>Google inc.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	
+	<authorFont>see free_AUTHORS.txt and free_CREDITS.txt file in this package</authorFont>
+    <copyrightFont>see free_AUTHORS.txt and free_CREDITS.txt file in this package</copyrightFont>
+    <licenseFont>see free_COPYING.txt file in this package</licenseFont>
+	
+    <description>Free Mono Font for Phoca PDF component</description>
+
+    <files>
+		  <filename>droidsansfallback.php</filename>
+		  <filename>droidsansfallback.z</filename>
+		  <filename>droidsansfallback.ctg.z</filename>
+		  <filename>index.html</filename>
+    </files>
+</install>

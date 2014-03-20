@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<font>
+  <fontname>Droidsansfallback</fontname>
+  <fonttype>UTF-8 CJK Font</fonttype>
+  <filename>droidsansfallback</filename>
+  <version>1.0</version>
+  <creationDate>2012-11-28</creationDate>
+  <author>Google.com</author>
+  <copyright>Google . All rights reserved.</copyright>
+  <license>apache licence</license>
+   <files>
+    <file>droidsansfallback.ctg.z</file>
+    <file>droidsansfallback.php</file>
+    <file>droidsansfallback.z</file>
+    <file>droidsansfallback.xml</file>
+  </files>
+</font>
