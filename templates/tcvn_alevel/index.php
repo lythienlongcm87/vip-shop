@@ -72,13 +72,36 @@ if($backtotop == 1) {
         //if have zipcode field use it for twzipcode default value
         //if not use default setup
         //$('#twzipcode').twzipcode();
-        if($('#zip_field').val()!=""){
+        
+        
+        if($('#zip_field').length>0){
         $('#twzipcode').twzipcode({
 		     zipcodeSel: $('#zip_field').val(),
              readonly: true
 		  
 	    });
+
+        $('#twzipcode').change( function() {
+ 		   //console.log($('.zipcode').val());
+            $('#zip_field').val($('.zipcode').val());
+            $('#district_field').val($('.district').val());
+            $('#county_field').val($('.county').val());
+         });
 	    
+	    }else if($('#shipto_zip_field').length>0){
+		    
+	    	$('#twzipcode').twzipcode({
+			     zipcodeSel: $('#shipto_zip_field').val(),
+	             readonly: true
+			  
+		    });
+
+	    	$('#twzipcode').change( function() {
+	            $('#shipto_zip_field').val($('.zipcode').val());
+	            $('#shipto_district_field').val($('.district').val());
+	            $('#shipto_county_field').val($('.county').val());
+	         });
+
 	    }else{
 		 $('#twzipcode').twzipcode({
 		    readonly: true	 
@@ -86,15 +109,7 @@ if($backtotop == 1) {
 		 
 		}
         
-       $('#twzipcode').change( function() {
-		   //console.log($('.zipcode').val());
-           $('#zip_field').val($('.zipcode').val());
-           $('#district_field').val($('.district').val());
-           $('#county_field').val($('.county').val());
-        });
-        
-        //fixed date format
-        //$(".datepicker").datepicker({ dateFormat: "yy-mm-dd" }).val();
+       
         
     });
 </script>

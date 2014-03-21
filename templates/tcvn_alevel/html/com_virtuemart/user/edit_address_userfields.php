@@ -66,7 +66,7 @@ foreach($this->userFields['fields'] as $field) {
 
 		// Output: Userfields
 		//mod by Eddy
-		if($field['name']=='county'  || $field['name']=='district' || $field['name']=='virtuemart_country_id'){
+		if($field['name']=='county'  || $field['name']=='district' || $field['name']=='virtuemart_country_id' || $field['name']=='shipto_county'  || $field['name']=='shipto_district' || $field['name']=='shipto_virtuemart_country_id'){
 		?>
 				<div class="row-fluid" style="display:none">
 					<div  class="key span4" title="<?php echo $field['description'] ?>" >
@@ -79,7 +79,7 @@ foreach($this->userFields['fields'] as $field) {
 					</div>
 				</div>
 	    <?php
-	    }else if($field['name']=='zip'){
+	    }else if($field['name']=='zip' || $field['name']=='shipto_zip'){
 		?>
 				<div class="row-fluid" >
 					<div  class="key span4" title="<?php echo $field['description'] ?>" >
