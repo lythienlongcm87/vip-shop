@@ -164,3 +164,10 @@ else {
         ?>
     </form>
 </div>
+ <?php 
+        //add by Eddy for fixed layout bug
+        if ($this->userDetails->JUser->get ('id') && $this->address_type != 'ST') {
+            echo '</div>';
+        } 
+        ?>
+
