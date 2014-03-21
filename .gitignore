@@ -7,3 +7,4 @@ configuration.php
 /ext_tmp
 /tmp
 /cache
+/administrator/cache
