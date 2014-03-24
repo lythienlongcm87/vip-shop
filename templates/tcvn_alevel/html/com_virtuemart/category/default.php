@@ -55,7 +55,7 @@ if (empty($this->keyword)) {?>
         <?php
 } ?>
 <div class="productcount">
-    <h3><?php echo JText::_('There are more than ') . count($this->products) . JText::_(' products in stock'); ?></h3>
+    <h3><?php echo JText::_('THERE_ARE_MORE_THAN') . count($this->products) . JText::_('PRODUCTS_IN_STOCK'); ?></h3>
 </div>
 
 <?php
