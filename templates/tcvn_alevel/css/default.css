@@ -172,8 +172,9 @@ hr {
 #tcvn-body h5 ,
 #tcvn-body h6{
     /*font-family: 'nexa_lightregular';*/
-    font-family: Helvetica, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+    font-family: "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Helvetica,  Arial, sans-serif;
     font-weight: bold;
+    text-rendering:auto;
 }
 #tcvn-body p,
 #tcvn-body dl,

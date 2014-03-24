@@ -154,7 +154,7 @@ if (empty($this->product)) {
                     </div>
                     <div class="row-fluid">
                         <div class="span5 ">
-                            <div class="product_sku"><b><?php echo JText::_('SKU: ') . $this->product->product_sku; ?></b></div>
+                            <div class="product_sku"><b><?php echo JText::_('SKU_WITH') . $this->product->product_sku; ?></b></div>
                             <?php
                             // Manufacturer of the Product
                             if (VmConfig::get('show_manufacturers', 1) && !empty($this->product->virtuemart_manufacturer_id)) {
@@ -195,7 +195,7 @@ if (empty($this->product)) {
                 if (!empty($this->product->product_s_desc)) {
                     ?>
                     <div class="product-short-description">
-                        <h6 class="title"><?php echo JText::_('Quick overview')?></h6>
+                        <h6 class="title"><?php echo JText::_('QUICK_OVERVIEW')?></h6>
                         <?php
                         /** @todo Test if content plugins modify the product description */
                         echo nl2br($this->product->product_s_desc);
@@ -297,20 +297,8 @@ if (empty($this->product)) {
 
     <div class="itemSocialSharing">
         <h3 class="socialSharing-title">
-            <?php echo JText::_('Share to your friend'); ?>
+            <?php echo JText::_('SHARE_TO_YOUR_FRIEND'); ?>
         </h3>
-        <div class="itemlinkedinButton socialSharing">
-            <script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-            <script type="IN/Share" data-counter="right"></script>
-        </div>
-
-        <!-- Twitter Button -->
-        <div class="itemTwitterButton socialSharing">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">
-                <?php echo JText::_('K2_TWEET'); ?>
-            </a>
-            <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-        </div>
 
         <!-- Facebook Button -->
         <div class="itemFacebookButton socialSharing">
