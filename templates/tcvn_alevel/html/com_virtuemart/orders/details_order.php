@@ -20,7 +20,7 @@ defined('_JEXEC') or die('Restricted access');
 
 ?>
 
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<table class="table">
     <tr>
 	<td   class="orders-key"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_PO_NUMBER') ?></td>
 	<td class="orders-key" align="left">

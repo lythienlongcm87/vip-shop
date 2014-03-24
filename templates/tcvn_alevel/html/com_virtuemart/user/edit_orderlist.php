@@ -20,7 +20,7 @@
 defined('_JEXEC') or die('Restricted access'); ?>
 
 <div id="editcell">
-	<table class="adminlist">
+	<table class="table">
 	<thead>
 	<tr>
 		<th>

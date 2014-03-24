@@ -29,7 +29,7 @@ if (count($this->orderlist) == 0) {
 } else {
  ?>
 <div id="editcell">
-	<table class="adminlist" width="80%">
+	<table class="table">
 	<thead>
 	<tr>
 		<th>

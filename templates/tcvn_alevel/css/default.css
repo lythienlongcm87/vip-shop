@@ -81,7 +81,7 @@ li {
 	border-spacing: 0;
 }
 #tcvn-body th, #tcvn-body td, #tcvn-body caption {
-	font-weight: normal;
+	/*font-weight: normal;*/
 	vertical-align: top;
 }
 q {

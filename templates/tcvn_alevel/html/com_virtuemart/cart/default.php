@@ -159,6 +159,9 @@ $document->addStyleDeclaration ('#facebox .content {display: block !important; h
 			?>
 		</div>
 		<?php // Continue and Checkout Button END ?>
+		<?php  // add by Eddy for checkout bug ?>
+		<input type="hidden" name="virtuemart_shipmentmethod_id" value="<?php echo $this->cart->virtuemart_shipmentmethod_id; ?>"/> 
+		<input type="hidden" name="virtuemart_paymentmethod_id" value="<?php echo $this->cart->virtuemart_paymentmethod_id; ?>"/> 
 		<input type='hidden' id='STsameAsBT' name='STsameAsBT' value='<?php echo $this->cart->STsameAsBT; ?>'/>
 		<input type='hidden' name='task' value='<?php echo $this->checkout_task; ?>'/>
 		<input type='hidden' name='option' value='com_virtuemart'/>
