@@ -30,15 +30,15 @@
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die('Restricted access');
 ?>
-
-<div style="padding-bottom:20px;">
+ <div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #D03C0F; padding-bottom:10px;">
+              <?php echo JText::_('EXTRA_ORDER_NOTIFY_EMAIL'); ?>
+            </div>
+<div>
 		<?php echo JText::_('COM_VIRTUEMART_MAIL_SHOPPER_YOUR_ORDER'); ?>
-		<br />
+		
 		<strong><?php echo $this->orderDetails['details']['BT']->order_number ?></strong>
 <br>
-
-
-		<?php echo JText::_('COM_VIRTUEMART_MAIL_SHOPPER_YOUR_PASSWORD'); ?>
+	<?php echo JText::_('COM_VIRTUEMART_MAIL_SHOPPER_YOUR_PASSWORD'); ?>
 		
 		<strong><?php echo $this->orderDetails['details']['BT']->order_pass ?></strong>
 <br>
@@ -47,11 +47,13 @@ defined('_JEXEC') or die('Restricted access');
 <br>
 				<?php echo JText::sprintf('COM_VIRTUEMART_MAIL_SHOPPER_TOTAL_ORDER',$this->currency->priceDisplay($this->orderDetails['details']['BT']->order_total,$this->currency) ); ?>
 <br>
-				<?php echo JText::sprintf('COM_VIRTUEMART_MAIL_ORDER_STATUS',JText::_($this->orderDetails['details']['BT']->order_status_name)) ; ?>
+				<font color="red"><?php echo JText::sprintf('COM_VIRTUEMART_MAIL_ORDER_STATUS',JText::_($this->orderDetails['details']['BT']->order_status_name)) ; ?></font>
+<br>
 <br>
   <?php $nb=count($this->orderDetails['history']);
   if($this->orderDetails['history'][$nb-1]->customer_notified && !(empty($this->orderDetails['history'][$nb-1]->comments))) { ?>
-
+       <?php echo JText::_('EXTRA_SHOP_NOTE_MESSAGE'); ?>
+       <br>
 		<?php echo  nl2br($this->orderDetails['history'][$nb-1]->comments); ?>
 
   <?php } ?>

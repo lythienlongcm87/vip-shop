@@ -38,7 +38,7 @@ defined('_JEXEC') or die('Restricted access');
     <meta name="viewport" content="initial-scale=1.0">    <!-- So that mobile webkit will display zoomed in -->
     <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
 
-    <title>2 columns to rows template | Antwort</title>
+    <title><?php echo JText::_('EXTRA_ORDER_NOTIFY_EMAIL'); ?></title>
 
     <style type="text/css">
       
@@ -119,11 +119,6 @@ table td {border-collapse:collapse;}
       <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff">
         <tr>
           <td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;">
-            <br>
-
-            <div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #D03C0F;">
-              New Test Quick Two Columns to Rows Demo
-            </div>
             <br>
 			<?php
 // Shop desc for shopper and vendor

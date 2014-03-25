@@ -21,7 +21,10 @@
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die('Restricted access');
 ?>
-<div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #D03C0F; border-top: 1px solid #ddd;"><br>Shopper Address</div>
+<div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #D03C0F; border-top: 1px solid #ddd; padding-bottom:10px;">
+<br>
+<?php echo JText::_('EXTRA_SHOPPER_ADDRESS'); ?>
+</div>
 <table border="0" cellpadding="0" cellspacing="0" class="columns-container">
   <tr>
     <td class="force-col" style="padding-right: 20px;" valign="top">

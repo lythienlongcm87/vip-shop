@@ -34,7 +34,10 @@ defined('_JEXEC') or die('Restricted access');
 <?php
 
 	if(!class_exists('ShopFunctions')) require(JPATH_VM_ADMINISTRATOR.DS.'helpers'.DS.'shopfunctions.php');
-	echo shopFunctions::renderVendorAddress($this->vendor->virtuemart_vendor_id);
+	//echo shopFunctions::renderVendorAddress($this->vendor->virtuemart_vendor_id);
+	//add by Eddy for correct vendor address(skip some fields)
+	$vendorAddressnew= shopFunctions::renderVendorAddress($this->vendor->virtuemart_vendor_id,"<br />",array('name','virtuemart_country_id','gender','birthday','title','username','email','agreed','first_name','last_name'));
+	echo $vendorAddressnew;
 
 /*	foreach($this->userFields as $userfields){
 
@@ -75,28 +78,40 @@ defined('_JEXEC') or die('Restricted access');
 
 		<div class="form-field">
 
-			<form method="post" class="form-validate" action="<?php echo JRoute::_('index.php') ; ?>" name="askform" id="askform">
-
-				<label><?php echo JText::_('COM_VIRTUEMART_USER_FORM_NAME')  ?> : <input type="text" class="validate[required,minSize[4],maxSize[64]]" value="<?php echo $this->user->name ?>" name="name" id="name" size="30"  validation="required name"/></label>
-				<br />
-				<label><?php echo JText::_('COM_VIRTUEMART_USER_FORM_EMAIL')  ?> : <input type="text" class="validate[required,custom[email]]" value="<?php echo $this->user->email ?>" name="email" id="email" size="30"  validation="required email"/></label>
-				<br/>
-				<label>
+			<form class="form-horizontal" method="post" class="form-validate" action="<?php echo JRoute::_('index.php') ; ?>" name="askform" id="askform">
+             <div class="control-group">
+				<label class="control-label"><?php echo JText::_('COM_VIRTUEMART_USER_FORM_NAME')  ?> : </label>
+				<div class="controls">
+				<input type="text" class="validate[required,minSize[4],maxSize[64]]" value="<?php echo $this->user->name ?>" name="name" id="name" size="30"  validation="required name"/>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label"><?php echo JText::_('COM_VIRTUEMART_USER_FORM_EMAIL')  ?> : </label>
+				<div class="controls">
+				<input type="text" class="validate[required,custom[email]]" value="<?php echo $this->user->email ?>" name="email" id="email" size="30"  validation="required email"/>
+				</div>
+			</div>
+			<div class="control-group">
+				   <label  class="control-label"> 
 					<?php
 					$ask_comment = JText::sprintf('COM_VIRTUEMART_ASK_COMMENT', $min, $max);
 					echo $ask_comment;
 					?>
-					<br />
+					</label>
+				<div class="controls">
 					<textarea title="<?php echo $ask_comment ?>" class="validate[required,minSize[<?php echo $min ?>],maxSize[<?php echo $max ?>]] field" id="comment" name="comment" cols="30" rows="10"></textarea>
-				</label>
-				<div class="submit">
-					<input class="highlight-button" type="submit" name="submit_ask" title="<?php echo JText::_('COM_VIRTUEMART_ASK_SUBMIT')  ?>" value="<?php echo JText::_('COM_VIRTUEMART_ASK_SUBMIT')  ?>" />
-
-					<div class="width50 floatright right paddingtop">
-						<?php echo JText::_('COM_VIRTUEMART_ASK_COUNT')  ?>
-						<input type="text" value="0" size="4" class="counter" id="counter" name="counter" maxlength="4" readonly="readonly" />
-					</div>
 				</div>
+			</div>
+			<div class="control-group">
+                    <div class="controls">
+                    <?php echo JText::_('COM_VIRTUEMART_ASK_COUNT')  ?>
+						<input type="text" value="0" size="4" class="counter" id="counter" name="counter" maxlength="4" readonly="readonly" />
+						<br>
+					<!-- <input class="highlight-button" type="submit" name="submit_ask" title="<?php echo JText::_('COM_VIRTUEMART_ASK_SUBMIT')  ?>" value="<?php echo JText::_('COM_VIRTUEMART_ASK_SUBMIT')  ?>" /> -->
+                    <button type="submit" class="btn"><?php echo JText::_('COM_VIRTUEMART_ASK_SUBMIT')  ?></button> 
+                  </div>
+            </div>
+				
 
 				<input type="hidden" name="view" value="vendor" />
 				<input type="hidden" name="virtuemart_vendor_id" value="<?php echo $this->vendor->virtuemart_vendor_id ?>" />

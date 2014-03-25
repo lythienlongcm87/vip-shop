@@ -23,8 +23,6 @@ defined ('_JEXEC') or die('Restricted access');
 <div>
 			<img src="<?php  echo JURI::root () . $this->vendor->images[0]->file_url ?>" />
 <br>
-<br>
-			<strong><?php echo JText::sprintf ('COM_VIRTUEMART_MAIL_SHOPPER_NAME',  $this->orderDetails['details']['BT']->first_name . ' ' . $this->orderDetails['details']['BT']->last_name); ?></strong><br/>
-<br>
+			<h1><?php echo JText::sprintf ('COM_VIRTUEMART_MAIL_SHOPPER_NAME',  $this->orderDetails['details']['BT']->first_name . ' ' . $this->orderDetails['details']['BT']->last_name); ?></h1><br/>
 <br>
 </div>

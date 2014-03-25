@@ -34,8 +34,11 @@ defined('_JEXEC') or die('Restricted access');
 <div class="vendor-description">
 <?php echo $this->vendor->vendor_store_desc.'<br>';
 	if(!class_exists('ShopFunctions')) require(JPATH_VM_ADMINISTRATOR.DS.'helpers'.DS.'shopfunctions.php');
-	echo shopFunctions::renderVendorAddress($this->vendor->virtuemart_vendor_id);
+	//echo shopFunctions::renderVendorAddress($this->vendor->virtuemart_vendor_id);
 
+	//add by Eddy for correct vendor address(skip some fields)
+	$vendorAddressnew= shopFunctions::renderVendorAddress($this->vendor->virtuemart_vendor_id,"<br />",array('name','virtuemart_country_id','gender','birthday','title','username','email','agreed','first_name','last_name'));
+	            echo $vendorAddressnew; 
 	?></div>
 
 <?php	echo $this->vendor->vendor_legal_info; ?>
