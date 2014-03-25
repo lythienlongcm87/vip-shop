@@ -21,18 +21,18 @@
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die('Restricted access');
 ?>
-<table class="html-email" cellspacing="0" cellpadding="0" border="0" width="100%">  <tr  >
-	<th width="50%">
-	    <?php echo JText::_('COM_VIRTUEMART_USER_FORM_BILLTO_LBL'); ?>
-	</th>
-	<th width="50%" >
-	    <?php echo JText::_('COM_VIRTUEMART_USER_FORM_SHIPTO_LBL'); ?>
-	</th>
-    </tr>
-    <tr>
-	<td valign="top" width="50%">
+<div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #D03C0F; border-top: 1px solid #ddd;"><br>Shopper Address</div>
+<table border="0" cellpadding="0" cellspacing="0" class="columns-container">
+  <tr>
+    <td class="force-col" style="padding-right: 20px;" valign="top">
 
-	    <?php
+        <!-- ### COLUMN 1 ### -->
+        <table border="0" cellspacing="0" cellpadding="0" width="260" align="left" class="col-2">
+        <tr>
+            <td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+                <strong><?php echo JText::_('COM_VIRTUEMART_USER_FORM_BILLTO_LBL'); ?></strong>
+                <br>
+                 <?php
 
 	    foreach ($this->userfields['fields'] as $field) {
 		if (!empty($field['value'])) {
@@ -46,10 +46,21 @@ defined('_JEXEC') or die('Restricted access');
 		 
 	    }
 	    ?>
+	    <br>
+            </td>
+        </tr>
+        </table>
 
-	</td>
-	<td valign="top" width="50%">
-	    <?php
+    </td>
+    <td class="force-col"  valign="top">
+
+        <!-- ### COLUMN 2 ### -->
+        <table border="0" cellspacing="0" cellpadding="0" width="260" align="right" class="col-2" id="last-col-2">
+            <tr>
+                <td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+                    <strong><?php echo JText::_('COM_VIRTUEMART_USER_FORM_SHIPTO_LBL'); ?></strong>
+                    <br>
+                   <?php
 	    foreach ($this->shipmentfields['fields'] as $field) {
 
 		if (!empty($field['value'])) {
@@ -63,7 +74,15 @@ defined('_JEXEC') or die('Restricted access');
 	    }
 
 	    ?>
-	</td>
-    </tr>
-</table>
+	     <br>
+                </td>
+            </tr>
+        </table>
+
+    </td>
+  </tr>
+  
+  
+</table><!--/ end .columns-container-->
+
 
