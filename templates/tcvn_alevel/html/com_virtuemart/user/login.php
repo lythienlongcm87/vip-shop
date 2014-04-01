@@ -98,7 +98,8 @@ JHTML::_ ( 'behavior.modal' );
                 <input type="text" id="order_pass" name="order_pass" class="inputbox" size="18" alt="order_pass" value="p_"/>
             </div>
             <div class="span4 floatleft" id="com-form-order-submit">
-                <input type="submit" name="Submitbuton" class="button" value="<?php echo JText::_('COM_VIRTUEMART_ORDER_BUTTON_VIEW') ?>" />
+                 <label></label><br />
+                <input type="submit" name="Submitbuton" class="default btn btn-warning" value="<?php echo JText::_('COM_VIRTUEMART_ORDER_BUTTON_VIEW') ?>" />
             </div>
             <div class="clr"></div>
             <input type="hidden" name="option" value="com_virtuemart" />

@@ -32,7 +32,7 @@ if ($display_style =="div") { ?>
                  ?>
 			</a>
             <a class="manufacturer-link-products" href="<?php echo $link1; ?>">
-                <?php echo JText::_('View products'); ?>
+                <?php echo JText::_('VIEW_PRODUCTS'); ?>
             </a>
 		</div>
 		<?php
@@ -71,7 +71,7 @@ if ($display_style =="div") { ?>
             ?>
             </a>
             <a class="manufacturer-link-products" href="<?php echo $link1; ?>">
-                <?php echo JText::_('View products'); ?>
+                <?php echo JText::_('VIEW_PRODUCTS'); ?>
             </a>
         </li>
         <?php
