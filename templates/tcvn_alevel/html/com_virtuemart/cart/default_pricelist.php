@@ -35,7 +35,8 @@
                 <?php
 
                 foreach ($this->cart->BTaddress['fields'] as $item) {
-                    if (!empty($item['value'])) {
+                     //modify by Eddy for don't display country and newsletter in cart page
+                    if (!empty($item['value']) && $item['name']!='newsletter' && $item['name']!='virtuemart_country_id' && $item['name']!='agreed' && $item['name']!='birthday'  && $item['name']!='gender') {
                         if ($item['name'] === 'agreed') {
                             $item['value'] = ($item['value'] === 0) ? JText::_ ('COM_VIRTUEMART_USER_FORM_BILLTO_TOS_NO') : JText::_ ('COM_VIRTUEMART_USER_FORM_BILLTO_TOS_YES');
                         }

@@ -35,6 +35,7 @@ defined('_JEXEC') or die('Restricted access');
     <td width="50%">
 
 		<?php 	foreach($this->BTaddress['fields'] as $item){
+			
 					if(!empty($item['value'])){
 						echo $item['title'].': '.$this->escape($item['value']).'<br/>';
 					}

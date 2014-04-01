@@ -71,7 +71,7 @@ JHtml::_('behavior.keepalive');
 		$usersConfig = JComponentHelper::getParams('com_users');
 		if ($usersConfig->get('allowUserRegistration')) : ?>
 		<li>
-			<a href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>">
+			<a href="<?php echo JRoute::_('index.php?option=com_virtuemart&view=user&layout=edit'); ?>">
 				<?php echo JText::_('MOD_LOGIN_REGISTER'); ?></a>
 		</li>
 		<?php endif; ?>

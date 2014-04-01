@@ -122,6 +122,7 @@ JHTML::_ ( 'behavior.modal' );
             <div class="row-fluid">
                 <p class="span4 floatleft" id="com-form-login-username">
                     <input type="text" name="username" class="inputbox" size="18" alt="<?php echo JText::_('COM_VIRTUEMART_USERNAME'); ?>" value="<?php echo JText::_('COM_VIRTUEMART_USERNAME'); ?>" onblur="if(this.value=='') this.value='<?php echo addslashes(JText::_('COM_VIRTUEMART_USERNAME')); ?>';" onfocus="if(this.value=='<?php echo addslashes(JText::_('COM_VIRTUEMART_USERNAME')); ?>') this.value='';" />
+                    <br>
                     <a href="<?php echo JRoute::_('index.php?option='.$comUserOption.'&view=remind'); ?>">
                         <?php echo JText::_('COM_VIRTUEMART_ORDER_FORGOT_YOUR_USERNAME'); ?></a>
                 </p>
@@ -132,6 +133,7 @@ JHTML::_ ( 'behavior.modal' );
                     <?php } else { ?>
                     <input id="modlgn-passwd" type="password" name="password" class="inputbox" size="18" alt="<?php echo JText::_('COM_VIRTUEMART_PASSWORD'); ?>" value="<?php echo JText::_('COM_VIRTUEMART_PASSWORD'); ?>" onblur="if(this.value=='') this.value='<?php echo addslashes(JText::_('COM_VIRTUEMART_PASSWORD')); ?>';" onfocus="if(this.value=='<?php echo addslashes(JText::_('COM_VIRTUEMART_PASSWORD')); ?>') this.value='';" />
                     <?php } ?>
+                    <br>
                     <a href="<?php echo JRoute::_('index.php?option='.$comUserOption.'&view=reset'); ?>">
                         <?php echo JText::_('COM_VIRTUEMART_ORDER_FORGOT_YOUR_PASSWORD'); ?></a>
                 </p>

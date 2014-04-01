@@ -77,7 +77,10 @@ defined('_JEXEC') or die('Restricted access');
 	    <?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_BILL_TO_LBL') ?></strong> <br/>
 	    <table border="0"><?php
 	    foreach ($this->userfields['fields'] as $field) {
-		if (!empty($field['value'])) {
+//modify by Eddy for don't display some field in order pdf file
+         if (!empty($field['value']) && $field['name'] !='newsletter' && $field['name'] !='gender'  && $field['name'] !='birthday' && $field['name'] !='virtuemart_country_id') {
+
+		 //if (!empty($field['value'])) {
 		    echo '<tr><td class="key">' . $field['title'] . '</td>'
 		    . '<td>' . $field['value'] . '</td></tr>';
 		}

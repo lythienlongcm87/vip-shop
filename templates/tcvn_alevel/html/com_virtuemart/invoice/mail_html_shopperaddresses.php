@@ -38,7 +38,8 @@ defined('_JEXEC') or die('Restricted access');
                  <?php
 
 	    foreach ($this->userfields['fields'] as $field) {
-		if (!empty($field['value'])) {
+        //modify by Eddy for don't display some field in order email
+		if (!empty($field['value']) && $field['name'] !='newsletter' && $field['name'] !='gender'  && $field['name'] !='birthday' && $field['name'] !='virtuemart_country_id') {
 			?><!-- span class="titles"><?php echo $field['title'] ?></span -->
 	    	    <span class="values vm2<?php echo '-' . $field['name'] ?>" ><?php echo $this->escape($field['value']) ?></span>
 			<?php if ($field['name'] != 'title' and $field['name'] != 'first_name' and $field['name'] != 'middle_name' and $field['name'] != 'zip') { ?>
