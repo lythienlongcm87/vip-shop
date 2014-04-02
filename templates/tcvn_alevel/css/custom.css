@@ -1,2 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
+@media screen and (max-width: 600px){
+    .table td {
+    	padding-left:0;
+    	padding-right:0;
+    }
+    
+    #tcvn-content .cart-summary .product-prices-result td:first-child{
+    
+    padding-right: 0px;
+    
+    }
+}

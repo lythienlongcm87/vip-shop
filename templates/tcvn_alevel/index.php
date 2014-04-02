@@ -36,6 +36,10 @@ include_once JPATH_ROOT . "/templates/" . $this->template . '/libs/variables.php
 	$document->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/bootstrap' . $direction . '.css');
 	$document->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/bootstrap-responsive' . $direction . '.css');
 
+	//add by Eddy for responsive design table
+	$document->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/footable.core.css');
+	
+	
 	if($customcss) {
     	$document->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/custom.css');
 	}
@@ -46,6 +50,8 @@ include_once JPATH_ROOT . "/templates/" . $this->template . '/libs/variables.php
 	$document->addScript(JURI::base() . 'templates/' . $this->template . '/js/bootstrap' . $direction . '.js');
 	
 	$document->addScript(JURI::base() . 'templates/' . $this->template . '/js/jquery.twzipcode.min.js');
+	$document->addScript(JURI::base() . 'templates/' . $this->template . '/js/footable.js');
+	
 ?>
 </head>
 <body id="tcvn-body" class="<?php echo ($menu->getActive() == $menu->getDefault()) ? "home " : ""; ?><?php echo ($classSfx != '') ? $classSfx : ""; ?>clearfix">
@@ -55,6 +61,10 @@ if($backtotop == 1) {
 <script type="text/javascript">
 
     jQuery(document).ready(function($) {
+    	 //for responsive table
+        $('.footable').footable();
+        
+        
         $('#tcvn-position-810 .tcvn-wrapper-inner').append('<div id="tcvn-backtop"><span>Back to Top</span></div>');
         $(window).scroll(function() {
             if($(window).scrollTop() != 0) {
@@ -108,10 +118,14 @@ if($backtotop == 1) {
 	     });
 		 
 		}
-        
+
        
         
+        
+        
     });
+
+    
 </script>
 <?php } ?>
 <div id="tcvn-wrapper">

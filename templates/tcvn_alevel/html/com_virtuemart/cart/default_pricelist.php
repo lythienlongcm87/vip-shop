@@ -112,23 +112,24 @@
 </div>
 
 <div class="cart">
-    <table
-        class="cart-summary"
-        cellspacing="0"
-        cellpadding="0"
-        border="0"
-        width="100%">
+
+    <table class="cart-summary footable table">
+        
+        
+    <thead> 
     <tr>
-        <th align="left"><?php echo JText::_ ('COM_VIRTUEMART_CART_NAME') ?></th>
-        <th align="left"><?php echo JText::_ ('COM_VIRTUEMART_CART_SKU') ?></th>
-        <th align="center" width="60px"><?php echo JText::_ ('COM_VIRTUEMART_CART_PRICE') ?></th>
-        <th align="right" width="140px"><?php echo JText::_ ('COM_VIRTUEMART_CART_QUANTITY') ?> / <?php echo JText::_ ('COM_VIRTUEMART_CART_ACTION') ?></th>
+        <th align="left" data-toggle="true" class="footable-first-column"><?php echo JText::_ ('COM_VIRTUEMART_CART_NAME') ?></th>
+        <th align="left" data-hide="phone"><?php echo JText::_ ('COM_VIRTUEMART_CART_SKU') ?></th>
+        <th align="center" width="60px" data-hide="phone" ><?php echo JText::_ ('COM_VIRTUEMART_CART_PRICE') ?></th>
+        <th align="right" width="140px" data-hide="phone"><?php echo JText::_ ('COM_VIRTUEMART_CART_QUANTITY') ?> / <?php echo JText::_ ('COM_VIRTUEMART_CART_ACTION') ?></th>
         <?php if (VmConfig::get ('show_tax')) { ?>
             <th align="center" width="60px"><?php  echo "<span  class='priceColor2'>" . JText::_ ('COM_VIRTUEMART_CART_SUBTOTAL_TAX_AMOUNT') ?></th>
         <?php } ?>
         <th align="right" width="60px"><?php echo "<span  class='priceColor2'>" . JText::_ ('COM_VIRTUEMART_CART_SUBTOTAL_DISCOUNT_AMOUNT') ?></th>
         <th align="center" width="70px"><?php echo JText::_ ('COM_VIRTUEMART_CART_TOTAL') ?></th>
     </tr>
+   </thead>
+   <tbody>
     <?php
     $i = 1;
     // 		vmdebug('$this->cart->products',$this->cart->products);
@@ -207,7 +208,11 @@
         <?php
         $i = ($i==1) ? 2 : 1;
     } ?>
+
+    </tbody>
+    </table>
     <!--Begin of SubTotal, Tax, Shipment, Coupon Discount and Total listing -->
+    <table class="cart-summary table">
     <?php if (VmConfig::get ('show_tax')) {
         $colspan = 3;
     } else {
@@ -227,12 +232,15 @@
         <td align="right"><?php echo "<span  class='priceColor2'>" . $this->currencyDisplay->createPriceDiv ('taxAmount', '', $this->cart->pricesUnformatted, FALSE) . "</span>" ?></td>
         <?php } ?>
         <td align="right"><?php echo "<span  class='priceColor2'>" . $this->currencyDisplay->createPriceDiv ('discountAmount', '', $this->cart->pricesUnformatted, FALSE) . "</span>" ?></td>
-        <td align="right"><?php echo $this->currencyDisplay->createPriceDiv ('salesPrice', '', $this->cart->pricesUnformatted, FALSE) ?></td>
+        <td align="right" style="text-align: right; padding-right:10px;"><?php echo $this->currencyDisplay->createPriceDiv ('salesPrice', '', $this->cart->pricesUnformatted, FALSE) ?></td>
     </tr>
+    </table>
 
+    <table class="cart-summary table">
     <?php
     if (VmConfig::get ('coupons_enable')) {
         ?>
+    
     <tr class="sectiontableentry2">
     <td colspan="4" align="left">
         <?php if (!empty($this->layoutName) && $this->layoutName == 'default') {
@@ -407,6 +415,7 @@
     }
     ?>
 
-
+    
     </table>
+    
 </div>
