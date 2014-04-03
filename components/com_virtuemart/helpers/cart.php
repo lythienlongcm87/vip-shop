@@ -155,8 +155,10 @@ class VirtueMartCart {
 
 		$userModel = VmModel::getModel('user');
 		$user = $userModel->getCurrentUser();
-
-		if (empty($this->BT) || (!empty($this->BT) && count($this->BT) <=1) ) {
+		
+		//vmdebug("$this->BT",$this->BT);
+		//modify by Eddy for BT can't display default value over 2 bug
+		if (empty($this->BT) || (!empty($this->BT) && count($this->BT) <=3) ) {
 			foreach ($user->userInfo as $address) {
 				if ($address->address_type == 'BT') {
 					$this->saveAddressInCart((array) $address, $address->address_type,false);
@@ -187,7 +189,7 @@ class VirtueMartCart {
 			$lastName = empty($this->BT['last_name'])? '':$this->BT['last_name'];
 			$email = empty($this->BT['email'])? '':$this->BT['email'];
 			$this->customer_number = 'nonreg_'.$firstName.$lastName.$email;
-			vmdebug('getShopperData customer_number  '.$user->virtuemart_user_id);
+			//vmdebug('getShopperData customer_number  '.$user->virtuemart_user_id);
 		}
 
 	}
@@ -1404,12 +1406,16 @@ class VirtueMartCart {
 
 	function prepareAddressDataInCart($type='BT',$new = false){
 
+		//$userModel = VmModel::getModel('user');
+		//$user = $userModel->getCurrentUser();
+		//vmdebug("$user",$user);
+		
 		$userFieldsModel =VmModel::getModel('Userfields');
 
 		if($new){
 			$data = null;
 		} else {
-			$data = (object)$this->$type;
+			$data = (object)$this->{$type};
 		}
 
 		if($type=='ST'){
@@ -1417,7 +1423,9 @@ class VirtueMartCart {
 		} else {
 			$preFix = '';
 		}
-
+        // vmdebug("$this->BT",$this->{$type});
+		//vmdebug("$userFieldsModel->getUserFieldsFor('cart',$type)", $userFieldsModel->getUserFieldsFor('cart',$type));
+		
 		$addresstype = $type.'address';
 		$userFieldsBT = $userFieldsModel->getUserFieldsFor('cart',$type);
 		$address = $this->$addresstype = $userFieldsModel->getUserFieldsFilled(
@@ -1426,9 +1434,15 @@ class VirtueMartCart {
 		,$preFix
 		);
 		//vmdebug('prepareAddressDataInCart',$this->$addresstype);
-		if(empty($this->$type) and $type=='BT'){
-			$tmp =&$this->$type ;
+		//vmdebug('$this->$type',$this->$type);
+		//$this->$type=null;
+		
+		if(empty($this->{$type}) and $type=='BT'){
+			$tmp =&$this->{$type} ;
 			$tmp = array();
+			
+			
+			
 			foreach($address['fields'] as $k =>$field){
 				//vmdebug('prepareAddressDataInCart',$k,$field);
 				if($k=='virtuemart_country_id'){

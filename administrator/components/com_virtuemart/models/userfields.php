@@ -458,7 +458,7 @@ class VirtueMartModelUserfields extends VmModel {
 		$register = false;
 
 		if(VmConfig::get('oncheckout_show_register',1) and $type=='BT'){
-			$user = JFactory::getUser();
+			$user = & JFactory::getUser();
 			if(!empty($user)){
 				if(empty($user->id)){
 					$register = true;
@@ -501,10 +501,12 @@ class VirtueMartModelUserfields extends VmModel {
 			);
 		}
 
-
+		
+		
+		
 		//Small ugly hack to make registering optional //do we still need that? YES !  notice by Max Milbers
 		if($register && $type == 'BT'  && VmConfig::get('oncheckout_show_register',1) ){
-
+			
 			$corefields = $this->getCoreFields();
 			unset($corefields[2]); //the 2 is for the email field, it is necessary in almost anycase.
 			foreach($userFields as $field){

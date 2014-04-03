@@ -18,7 +18,6 @@
 
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die('Restricted access');
-
 ?>
 <?php if(!$this->userDetails->user_is_vendor){ ?>
 <div class="buttonBar-right">

@@ -33,7 +33,6 @@
             <?php // Output Bill To Address ?>
             <div class="output-billto">
                 <?php
-
                 foreach ($this->cart->BTaddress['fields'] as $item) {
                      //modify by Eddy for don't display country and newsletter in cart page
                     if (!empty($item['value']) && $item['name']!='newsletter' && $item['name']!='virtuemart_country_id' && $item['name']!='agreed' && $item['name']!='birthday'  && $item['name']!='gender') {
@@ -232,23 +231,26 @@
         <td align="right"><?php echo "<span  class='priceColor2'>" . $this->currencyDisplay->createPriceDiv ('taxAmount', '', $this->cart->pricesUnformatted, FALSE) . "</span>" ?></td>
         <?php } ?>
         <td align="right"><?php echo "<span  class='priceColor2'>" . $this->currencyDisplay->createPriceDiv ('discountAmount', '', $this->cart->pricesUnformatted, FALSE) . "</span>" ?></td>
-        <td align="right" style="text-align: right; padding-right:10px;"><?php echo $this->currencyDisplay->createPriceDiv ('salesPrice', '', $this->cart->pricesUnformatted, FALSE) ?></td>
+        <td align="right" style="text-align: right; padding-right:20px;"><?php echo $this->currencyDisplay->createPriceDiv ('salesPrice', '', $this->cart->pricesUnformatted, FALSE) ?></td>
     </tr>
     </table>
 
-    <table class="cart-summary table">
+   
     <?php
     if (VmConfig::get ('coupons_enable')) {
         ?>
-    
+    <table class="cart-summary table">
     <tr class="sectiontableentry2">
-    <td colspan="4" align="left">
+    <td colspan="6" align="left">
         <?php if (!empty($this->layoutName) && $this->layoutName == 'default') {
         // echo JHTML::_('link', JRoute::_('index.php?view=cart&task=edit_coupon',$this->useXHTML,$this->useSSL), JText::_('COM_VIRTUEMART_CART_EDIT_COUPON'));
         echo $this->loadTemplate ('coupon');
     }
         ?>
-
+        </td>
+        </tr>
+        <tr class="sectiontableentry2">
+    <td colspan="4" style="text-align: center;">
         <?php if (!empty($this->cart->cartData['couponCode'])) { ?>
         <?php
         echo $this->cart->cartData['couponCode'];
@@ -258,10 +260,10 @@
                     </td>
 
                          <?php if (VmConfig::get ('show_tax')) { ?>
-            <td align="right"><?php echo $this->currencyDisplay->createPriceDiv ('couponTax', '', $this->cart->pricesUnformatted['couponTax'], FALSE); ?> </td>
+            <td align="right" style="text-align: right; ><?php echo $this->currencyDisplay->createPriceDiv ('couponTax', '', $this->cart->pricesUnformatted['couponTax'], FALSE); ?> </td>
             <?php } ?>
         <td align="right">&nbsp;</td>
-        <td align="right"><?php echo $this->currencyDisplay->createPriceDiv ('salesPriceCoupon', '', $this->cart->pricesUnformatted['salesPriceCoupon'], FALSE); ?> </td>
+        <td align="right" style="text-align: right; padding-right:20px;"><?php echo $this->currencyDisplay->createPriceDiv ('salesPriceCoupon', '', $this->cart->pricesUnformatted['salesPriceCoupon'], FALSE); ?> </td>
         <?php } else { ?>
         <td colspan="6" align="left">&nbsp;</td>
         <?php
@@ -269,9 +271,10 @@
 
         ?>
     </tr>
+    </table>
         <?php } ?>
 
-
+    <table class="cart-summary table">  
     <?php
     foreach ($this->cart->cartData['DBTaxRulesBill'] as $rule) {
         ?>
@@ -389,14 +392,16 @@
             <hr/>
         </td>
     </tr>
+    </table>
+    <table class="cart-summary table">
     <tr class="sectiontableentry2">
-        <td colspan="4" align="right" class="total-sectiontab"><?php echo JText::_ ('COM_VIRTUEMART_CART_TOTAL') ?>:</td>
+        <td colspan="4" align="right" class="total-sectiontab"><?php echo JText::_ ('COM_VIRTUEMART_CART_TOTAL') ?></td>
 
         <?php if (VmConfig::get ('show_tax')) { ?>
         <td align="right"> <?php echo "<span  class='priceColor2'>" . $this->currencyDisplay->createPriceDiv ('billTaxAmount', '', $this->cart->pricesUnformatted['billTaxAmount'], FALSE) . "</span>" ?> </td>
         <?php } ?>
         <td align="right"> <?php echo "<span  class='priceColor2'>" . $this->currencyDisplay->createPriceDiv ('billDiscountAmount', '', $this->cart->pricesUnformatted['billDiscountAmount'], FALSE) . "</span>" ?> </td>
-        <td align="right"><strong><?php echo $this->currencyDisplay->createPriceDiv ('billTotal', '', $this->cart->pricesUnformatted['billTotal'], FALSE); ?></strong></td>
+        <td align="right" style="text-align: right; padding-right:20px;"><strong><?php echo $this->currencyDisplay->createPriceDiv ('billTotal', '', $this->cart->pricesUnformatted['billTotal'], FALSE); ?></strong></td>
     </tr>
     <?php
     if ($this->totalInPaymentCurrency) {
@@ -409,7 +414,7 @@
         <td align="right"></td>
         <?php } ?>
         <td align="right"></td>
-        <td align="right"><strong><?php echo $this->totalInPaymentCurrency;   ?></strong></td>
+        <td style="text-align: right; padding-right:20px;"><strong><?php echo $this->totalInPaymentCurrency;   ?></strong></td>
     </tr>
         <?php
     }

@@ -21,6 +21,8 @@
 
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die('Restricted access');
+
+
 ?>
 <table width="100%">
   <tr>

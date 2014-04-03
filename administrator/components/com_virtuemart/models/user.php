@@ -173,6 +173,7 @@ class VirtueMartModelUser extends VmModel {
 			$shoppergroupmodel->appendShopperGroups($this->_data->shopper_groups,$this->_data->JUser,$site);
 		}
 
+		
 		if(!empty($this->_id)) {
 			$q = 'SELECT `virtuemart_userinfo_id` FROM `#__virtuemart_userinfos` WHERE `virtuemart_user_id` = "' . (int)$this->_id.'"';
 			$this->_db->setQuery($q);
