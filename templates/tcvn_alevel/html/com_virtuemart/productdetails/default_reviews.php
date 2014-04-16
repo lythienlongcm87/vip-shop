@@ -35,7 +35,7 @@ if ($this->allowRating || $this->showReview) {
 	} ?>
 
 	<div class="customer-reviews">
-		<form method="post" action="<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->virtuemart_product_id . '&virtuemart_category_id=' . $this->product->virtuemart_category_id); ?>" name="reviewForm" id="reviewform">
+		<form method="post" action="<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->virtuemart_product_id . '&virtuemart_category_id=' . $this->product->virtuemart_category_id, FALSE); ?>" name="reviewForm" id="reviewform">
 	<?php
 }
 
@@ -136,14 +136,14 @@ if ($this->showReview) {
 					var form = document.getElementById('reviewform');
 					form.counter.value= form.comment.value.length;
 				}
-				jQuery(function($) {
-					var steps = " . $maxrating . ";
-					var parentPos= $('.write-reviews .ratingbox').position();
-					var boxWidth = $('.write-reviews .ratingbox').width();// nbr of total pixels
-					var starSize = (boxWidth/steps);
-					var ratingboxPos= $('.write-reviews .ratingbox').offset();
+			jQuery(function($) {
+			var steps = " . $maxrating . ";
+						var parentPos= $('.write-reviews .ratingbox').position();
+						var boxWidth = $('.write-reviews .ratingbox').width();// nbr of total pixels
+						var starSize = (boxWidth/steps);
 
-					$('.write-reviews .ratingbox').mousemove( function(e){
+						$('.write-reviews .ratingbox').mousemove( function(e){
+						var ratingboxPos= $('.write-reviews .ratingbox').offset();
 						var span = $(this).children();
 						var dif = e.pageX-ratingboxPos.left; // nbr of pixels
 						difRatio = Math.floor(dif/boxWidth* steps )+1; //step
