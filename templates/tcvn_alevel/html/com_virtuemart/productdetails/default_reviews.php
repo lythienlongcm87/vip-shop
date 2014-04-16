@@ -137,7 +137,7 @@ if ($this->showReview) {
 					form.counter.value= form.comment.value.length;
 				}
 			jQuery(function($) {
-			var steps = " . $maxrating . ";
+			            var steps = " . $maxrating . ";
 						var parentPos= $('.write-reviews .ratingbox').position();
 						var boxWidth = $('.write-reviews .ratingbox').width();// nbr of total pixels
 						var starSize = (boxWidth/steps);

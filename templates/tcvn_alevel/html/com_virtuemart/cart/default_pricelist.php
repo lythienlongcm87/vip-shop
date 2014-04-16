@@ -260,7 +260,7 @@
                     </td>
 
                          <?php if (VmConfig::get ('show_tax')) { ?>
-            <td align="right" style="text-align: right; ><?php echo $this->currencyDisplay->createPriceDiv ('couponTax', '', $this->cart->pricesUnformatted['couponTax'], FALSE); ?> </td>
+            <td align="right" style="text-align: right;" ><?php echo $this->currencyDisplay->createPriceDiv ('couponTax', '', $this->cart->pricesUnformatted['couponTax'], FALSE); ?> </td>
             <?php } ?>
         <td align="right">&nbsp;</td>
         <td align="right" style="text-align: right; padding-right:20px;"><?php echo $this->currencyDisplay->createPriceDiv ('salesPriceCoupon', '', $this->cart->pricesUnformatted['salesPriceCoupon'], FALSE); ?> </td>
